@@ -12,3 +12,7 @@ In this website you can find, projects that I am proud of; projects that I am no
 
 For readers with no time, below is a machine-friendly version!
 
+## CV
+
+![Resume Screenshot](https://raw.githubusercontent.com/ayonkov1/cv-resume/main/main.png)
+
