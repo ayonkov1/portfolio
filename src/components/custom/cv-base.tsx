@@ -7,6 +7,7 @@ import Experience from './sections/experience'
 import Education from './sections/education'
 
 import Skills from './sections/skills-and-proficiencies'
+import TechnicallSkills from './sections/technical-skills'
 
 const CVComponent = () => {
   return (
@@ -35,8 +36,9 @@ const CVComponent = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-10 pt-10">
         <Summary />
+        <TechnicallSkills />
         <div className="flex flex-row gap-16">
           <div className="flex flex-2">
             <Experience />
