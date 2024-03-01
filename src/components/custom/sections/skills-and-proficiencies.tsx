@@ -1,3 +1,4 @@
+import { Title } from '@/components/core/title'
 import React from 'react'
 
 const skills: string[] = [
@@ -14,7 +15,8 @@ const skills: string[] = [
 const Skills = () => {
   return (
     <div>
-      <p className="text-lg lg:text-3xl py-1 font-bold">Skills and Proficiencies</p>
+      <Title text="Skills and Proficiencies" />
+
       <ul className="text-sm lg:text-lg py-1 list-disc pl-4">
         {skills.map((skill, index) => (
           <li className="list-item" key={index}>

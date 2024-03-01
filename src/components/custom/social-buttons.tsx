@@ -1,21 +1,26 @@
 import React from 'react'
-import { Github, Linkedin } from 'lucide-react'
+import { Github, Linkedin, FileText } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 type Variants = {
   Github: React.ComponentType
   Linkedin: React.ComponentType
+  FileText: React.ComponentType
 }
 
-export function SocialButton({ variant }: { variant: keyof Variants }) {
+export function SocialButton({ variant, link }: { variant: keyof Variants; link?: string }) {
   const IconComponent = {
     Github: Github,
     Linkedin: Linkedin,
+    FileText: FileText,
   }[variant]
 
   return (
     <Button variant="outline" size="icon">
-      <IconComponent className="h-4 w-4" />
+      <Link href={link ? link : '#'}>
+        <IconComponent className="h-6 w-6" />
+      </Link>
     </Button>
   )
 }

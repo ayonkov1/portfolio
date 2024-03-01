@@ -1,3 +1,4 @@
+import { Title } from '@/components/core/title'
 import React from 'react'
 
 interface Role {
@@ -43,7 +44,8 @@ const experiences: Experience[] = [
 function ExperienceSection() {
   return (
     <div>
-      <p className="text-lg lg:text-3xl py-1 font-bold">Experience</p>
+      <Title text="Experience" />
+
       {experiences.map((exp, index) => (
         <div key={index} className="text-sm lg:text-lg py-1 pb-10">
           <p className="text-lg lg:text-2xl font-semibold pt-1">{`${exp.title} at ${exp.company}`}</p>

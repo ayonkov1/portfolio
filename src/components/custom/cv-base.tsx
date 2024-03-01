@@ -17,36 +17,31 @@ const CVComponent = () => {
           <Image
             src="/profilepic.png"
             alt="Atanas Yonkov Profile Picture"
-            className="rounded-lg shadow-xl drop-shadow-xl shadow-neutral-700"
+            className="rounded-lg brightness-110 dark:brightness-125 shadow-2xl drop-shadow-2xl border"
             layout="fill"
             priority
           />
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className="text-2xl lg:text-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-tr from-emerald-400 to-cyan-400">
-            Atanas Yonkov
+          <h1 className="text-2xl lg:text-5xl font-extrabold relative z-20 bg-clip-text text-transparent bg-gradient-to-tr text-blue-900 dark:text-blue-400">
+            Atanas A. Yonkov
           </h1>
-          <p className="text-lg lg:text-3xl py-1 font-bold">Software Developer</p>
+          <p className="text-lg lg:text-2xl py-1 font-mono">software developer</p>
           <div className="flex gap-4 align-middle items-center justify-center lg:justify-start">
             <div className="mr-10">
               <ModeToggle />
             </div>
-            <SocialButton variant="Github" />
-            <SocialButton variant="Linkedin" />
+            <SocialButton variant="FileText" link="https://nbviewer.org/github/ayonkov1/cv-resume/blob/main/main.pdf" />
+            <SocialButton variant="Github" link="https://github.com/ayonkov1" />
+            <SocialButton variant="Linkedin" link="https://www.linkedin.com/in/atanas-yonkov/" />
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-10 pt-10">
         <Summary />
         <TechnicallSkills />
-        <div className="flex flex-row gap-16">
-          <div className="flex flex-2">
-            <Experience />
-          </div>
-          <div className="flex flex-1">
-            <Skills />
-          </div>
-        </div>
+        <Experience />
+        <Skills />
         <Education />
       </div>
     </div>

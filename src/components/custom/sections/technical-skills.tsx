@@ -1,13 +1,14 @@
+import { Title } from '@/components/core/title'
 import React from 'react'
 
 const projects = [
   {
     title: 'Languages',
-    description: 'JavaScript, TypeScript, Python, SQL (MySQL), HTML/CSS, R',
+    description: 'JavaScript, TypeScript, Python, SQL(MySQL), HTML/CSS, R',
   },
   {
     title: 'Frameworks',
-    description: 'React, Redux (Thunk), Node.js, Next.js, Material-UI, FastAPI, Knex.js, Apollo GraphQL. D3.js, Chart.js',
+    description: 'React, Redux (Thunk), Node.js, Next.js, Material-UI, FastAPI, Knex.js, Apollo GraphQL, D3.js, Chart.js',
   },
   {
     title: 'Developer Tools',
@@ -18,8 +19,9 @@ const projects = [
 const TechnicallSkills = () => {
   return (
     <div>
-      <p className="text-lg lg:text-3xl py-1 font-bold">Technical Skills</p>
-      <div className="py-1 flex gap-4">
+      <Title text="Technical Skills" />
+
+      <div className="py-1 flex gap-4 font-mono">
         {projects.map((project, index) => (
           <div key={index} className="border rounded-lg p-4 my-2 shadow-xl bg-white dark:bg-black">
             <h3 className="text-xl font-semibold text-blue-900 dark:text-blue-400">{project.title}</h3>

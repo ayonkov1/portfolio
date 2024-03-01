@@ -1,9 +1,10 @@
+import { Title } from '@/components/core/title'
 import React from 'react'
 
 const Summary = () => {
   return (
     <div>
-      <p className="text-lg lg:text-3xl py-1 font-bold">Summary</p>
+      <Title text="Summary" />
 
       <p className="text-sm lg:text-lg py-1 ">
         Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
