@@ -8,18 +8,20 @@ const CVComponent = () => {
   return (
     <div className="py-2 md:px-10 lg:px-20 xl:px-32 2xl:px-72">
       <div className="text-center lg:text-left flex flex-col lg:flex-row items-center lg:items-start gap-10 justify-start">
-        <div>
+        <div className="lg:h-64 lg:w-64 relative w-32 h-32">
           <Image
             src="/profilepic.png"
             alt="Atanas Yonkov Profile Picture"
             className="rounded-lg shadow-xl drop-shadow-xl shadow-neutral-700"
-            width={200}
-            height={24}
+            layout="fill"
             priority
           />
         </div>
+        {/* <div className="h-64 w-64 relative">
+          <Image src="/profilepic.png" alt="Picture of the author" layout="fill" className="rounded-lg object-cover" priority />
+        </div> */}
         <div className="flex flex-col gap-4">
-          <h1 className="text-2xl lg:text-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-tr from-neutral-200 to-neutral-700">
+          <h1 className="text-2xl lg:text-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-tr from-emerald-400 to-cyan-400">
             Atanas Yonkov
           </h1>
           <p className="text-lg lg:text-3xl py-1">Junior Software Developer</p>
@@ -34,11 +36,7 @@ const CVComponent = () => {
         <div>
           <Summary />
         </div>
-        <div className="flex flex-col lg:flex-row">
-          <Summary />
-          <Summary />
-        </div>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-10">
           <Summary />
           <Summary />
         </div>
