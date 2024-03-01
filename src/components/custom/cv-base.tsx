@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { ModeToggle } from '../ui/light-dark-toggle'
 
 const CVComponent = () => {
   return (
@@ -10,6 +11,9 @@ const CVComponent = () => {
       <div>
         <h1 className="text-5xl font-bold py-1">Atanas Yonkov</h1>
         <p className="text-3xl py-1">Junior Software Engineer</p>
+      </div>
+      <div>
+        <ModeToggle />
       </div>
     </div>
   )

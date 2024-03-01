@@ -1,4 +1,4 @@
-import CVComponent from '@/components/cv-base'
+import CVComponent from '@/components/custom/cv-base'
 import Image from 'next/image'
 
 export default function Home() {
