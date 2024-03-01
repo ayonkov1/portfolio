@@ -5,7 +5,7 @@ import { SocialButton } from './social-buttons'
 
 const CVComponent = () => {
   return (
-    <div className="text-center flex gap-10">
+    <div className="text-center flex flex-col lg:flex-row items-center lg:items-start gap-10">
       <div>
         <Image
           src="/profilepic.png"
@@ -17,10 +17,10 @@ const CVComponent = () => {
         />
       </div>
       <div className="flex flex-col gap-4">
-        <h1 className="text-5xl font-bold sm:text-7xl relative z-20 bg-clip-text text-transparent bg-gradient-to-t from-neutral-200 to-neutral-700">
+        <h1 className="text-2xl lg:text-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-tr from-neutral-200 to-neutral-700">
           Atanas Yonkov
         </h1>
-        <p className="text-3xl py-1">Junior Software Developer</p>
+        <p className="text-lg lg:text-3xl py-1">Junior Software Developer</p>
         <div className="flex gap-4 align-middle items-center justify-center">
           <ModeToggle />
           <SocialButton variant="Github" />
