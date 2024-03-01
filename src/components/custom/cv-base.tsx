@@ -6,13 +6,20 @@ const CVComponent = () => {
   return (
     <div className="text-center flex gap-4">
       <div>
-        <Image src="/profilepic.png" alt="Vercel Logo" className="dark" width={200} height={24} priority />
+        <Image
+          src="/profilepic.png"
+          alt="Vercel Logo"
+          className="rounded-lg shadow-xl drop-shadow-xl "
+          width={200}
+          height={24}
+          priority
+        />
       </div>
       <div>
-        <h1 className="text-5xl font-bold py-1">Atanas Yonkov</h1>
+        <h1 className="text-5xl font-bold sm:text-7xl relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-700">
+          Atanas Yonkov
+        </h1>
         <p className="text-3xl py-1">Junior Software Engineer</p>
-      </div>
-      <div>
         <ModeToggle />
       </div>
     </div>
