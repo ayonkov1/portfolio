@@ -1,11 +1,8 @@
 import React from 'react'
-import { ModeToggle } from '../ui/light-dark-toggle'
-import { SocialButton } from './social-buttons'
 import Summary from './sections/summary'
 import Experience from './sections/experience'
 import Education from './sections/education'
 
-import Skills from './sections/skills-and-proficiencies'
 import TechnicallSkills from './sections/technical-skills'
 import { Header } from './sections/header'
 import { Certificates } from './sections/certificates'
