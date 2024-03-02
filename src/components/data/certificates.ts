@@ -18,7 +18,7 @@ export const certificates: Certificate[] = [
   {
     name: 'Agile Software Development',
     issuingOrganization: 'Coursera',
-    issueDate: 'September 2020',
+    issueDate: 'Sep 2020',
     expirationDate: 'This certification does not expire',
     credentialID: 'XHLFLW6BQXHR',
     credentialURL: 'https://www.coursera.org/account/accomplishments/certificate/XHLFLW6BQXHR',
@@ -50,7 +50,7 @@ export const certificates: Certificate[] = [
   {
     name: 'Introduction to SQL',
     issuingOrganization: 'DataCamp',
-    issueDate: 'November 2019',
+    issueDate: 'Nov 2019',
     expirationDate: 'This certification does not expire',
     credentialID: 'Y7ZN6VP5743C',
     credentialURL: 'https://www.datacamp.com/statement-of-accomplishment/course/db819f7016ce7088e12ae695c504d18a6a6a4692',
@@ -58,7 +58,7 @@ export const certificates: Certificate[] = [
   {
     name: 'Introduction to Tidyverse',
     issuingOrganization: 'DataCamp',
-    issueDate: 'September 2019',
+    issueDate: 'Sep. 2019',
     expirationDate: 'This certification does not expire',
     credentialID: 'Y7ZN6VP5743C',
     credentialURL: 'https://www.datacamp.com/statement-of-accomplishment/course/ed885ce1dd657113464082e4864df8f7312b1602',

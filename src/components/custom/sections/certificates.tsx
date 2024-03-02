@@ -1,6 +1,5 @@
 import { SubTitle, Title, Text } from '@/components/core/title'
 import { certificates } from '@/components/data/certificates'
-import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 
 export const Certificates = () => {
   return (
@@ -11,18 +10,24 @@ export const Certificates = () => {
         {certificates.map((certificate, index) => (
           <div key={index} className="border rounded-lg p-4 shadow-xl bg-white dark:bg-black">
             <SubTitle text={certificate.name} />
-            <Text text={certificate.issuingOrganization} />
-            <Text text={certificate.issueDate} />
-            <Text text={certificate.expirationDate} />
-            {certificate.credentialID && <Text text={certificate.credentialID} />}
             <a
               href={certificate.credentialURL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-blue-500 hover:underline font-semibold"
             >
-              View Credential
+              {certificate.issuingOrganization}
             </a>
+
+            <div className="flex gap-4 justify-between font-mono text-slate-400 dark:text-slate-600">
+              {certificate.credentialID ? (
+                <Text text={`Reference: ${certificate.credentialID}`} />
+              ) : (
+                <Text text={`Reference: N/A`} />
+              )}
+
+              <Text text={certificate.issueDate} />
+            </div>
           </div>
         ))}
       </div>
