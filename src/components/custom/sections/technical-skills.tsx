@@ -1,4 +1,4 @@
-import { Title } from '@/components/core/title'
+import { SubTitle, Title, Text } from '@/components/core/title'
 import React from 'react'
 
 const projects = [
@@ -21,11 +21,11 @@ const TechnicallSkills = () => {
     <div>
       <Title text="Technical Skills" />
 
-      <div className="py-1 flex gap-4 font-mono">
+      <div className="py-1 flex flex-col lg:flex-row gap-1 lg:gap-4">
         {projects.map((project, index) => (
           <div key={index} className="border rounded-lg p-4 my-2 shadow-xl bg-white dark:bg-black">
-            <h3 className="text-xl font-semibold text-blue-900 dark:text-blue-400">{project.title}</h3>
-            <p>{project.description}</p>
+            <SubTitle text={project.title} />
+            <Text text={project.description} />
           </div>
         ))}
       </div>
