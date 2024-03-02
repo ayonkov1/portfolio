@@ -1,4 +1,5 @@
-import { Title } from '@/components/core/title'
+import { Title, Text } from '@/components/core/title'
+import { education } from '@/components/data/education'
 import React from 'react'
 
 const Education = () => {
@@ -6,14 +7,19 @@ const Education = () => {
     <div>
       <Title text="Education" />
 
-      <p className="text-sm lg:text-lg py-1 ">
-        Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-        ex esse exercitation amet. Nisi animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla
-        sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident
-        adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
-      </p>
+      {education.map((edu, index) => (
+        <div key={index} className="text-sm lg:text-lg py-1 pb-6">
+          <p className="text-md lg:text-2xl font-semibold pt-1 text-purple-600 dark:text-purple-400">
+            {edu.degree ? `${edu.degree} at ${edu.name}` : `${edu.program} at ${edu.name}`}
+          </p>
+          <p className="italic">{edu.duration}</p>
+          <ul className="list-disc pl-4 text-base">
+            {edu.activities?.map((activity, activityIndex) => (
+              <li key={activityIndex}>{activity}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
   )
 }
