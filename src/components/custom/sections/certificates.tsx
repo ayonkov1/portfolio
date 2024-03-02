@@ -14,7 +14,7 @@ export const Certificates = () => {
               href={certificate.credentialURL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline font-semibold"
+              className="text-blue-500 hover:underline font-mono"
             >
               {certificate.issuingOrganization}
             </a>

@@ -28,7 +28,7 @@ const Summary = () => {
               </p>
 
               {/* <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">Explore</button> */}
-              <Meteors number={20} className=" backdrop-blur-lg" />
+              {/* <Meteors number={20} className=" backdrop-blur-lg" /> */}
             </div>
           </div>
         </div>

@@ -15,7 +15,10 @@ const Education = () => {
           <p className="italic">{edu.duration}</p>
           <ul className="list-disc pl-4 text-base">
             {edu.activities?.map((activity, activityIndex) => (
-              <li key={activityIndex}>{activity}</li>
+              <div key={activityIndex}>
+                <Text text={activity} />
+              </div>
+              // <li key={activityIndex}>{activity}</li>
             ))}
           </ul>
         </div>
