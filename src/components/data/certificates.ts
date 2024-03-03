@@ -48,7 +48,7 @@ export const certificates: Certificate[] = [
     credentialURL: 'https://www.coursera.org/account/accomplishments/certificate/Y7ZN6VP5743C',
   },
   {
-    name: 'Introduction to SQL',
+    name: 'Intermediate SQL Queries',
     issuingOrganization: 'DataCamp',
     issueDate: 'Nov 2019',
     expirationDate: 'This certification does not expire',

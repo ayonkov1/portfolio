@@ -10,15 +10,19 @@ const Education = () => {
       {education.map((edu, index) => (
         <div key={index} className="text-sm lg:text-lg py-1 pb-6">
           <p className="text-md lg:text-2xl font-semibold pt-1 text-purple-600 dark:text-purple-400">
-            {edu.degree ? `${edu.degree} at ${edu.name}` : `${edu.program} at ${edu.name}`}
+            {edu.degree ? `${edu.degree}` : `${edu.program}`}
           </p>
-          <p className="italic">{edu.duration}</p>
+          <div className="flex flex-col lg:flex-row gap-1 lg:gap-4 text-sm pb-4">
+            <p className="font-bold">{edu.name}</p>
+            <p className="italic ">{edu.duration}</p>
+          </div>
+          <p className="font-bold text-sm">{edu.GPA}</p>
+
           <ul className="list-disc pl-4 text-base">
             {edu.activities?.map((activity, activityIndex) => (
-              <div key={activityIndex}>
+              <li key={activityIndex}>
                 <Text text={activity} />
-              </div>
-              // <li key={activityIndex}>{activity}</li>
+              </li>
             ))}
           </ul>
         </div>
