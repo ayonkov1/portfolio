@@ -18,9 +18,13 @@ export function SocialButton({ variant, link }: { variant: keyof Variants; link?
 
   return (
     <Button variant="outline" size="icon">
-      <Link href={link ? link : '#'}>
+      {link ? (
+        <Link href={link} target="_blank">
+          <IconComponent className="h-6 w-6" />
+        </Link>
+      ) : (
         <IconComponent className="h-6 w-6" />
-      </Link>
+      )}
     </Button>
   )
 }

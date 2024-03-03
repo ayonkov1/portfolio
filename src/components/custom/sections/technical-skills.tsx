@@ -8,7 +8,8 @@ const projects = [
   },
   {
     title: 'Frameworks',
-    description: 'React, Redux (Thunk), Node.js, Next.js, Material-UI, FastAPI, Knex.js, Apollo GraphQL, D3.js, Chart.js',
+    description:
+      'React, Redux (Thunk), Node.js, Next.js, Material-UI, FastAPI, Knex.js, Apollo GraphQL, D3.js, Chart.js. Tailwind CSS',
   },
   {
     title: 'Developer Tools',

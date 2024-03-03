@@ -1,4 +1,4 @@
-import CVComponent from '@/components/custom/cv-base'
+import CVComponent from '@/components/core/cv-base'
 
 export default function Home() {
   return (

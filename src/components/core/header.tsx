@@ -1,11 +1,11 @@
 import { ModeToggle } from '@/components/ui/light-dark-toggle'
 import Image from 'next/image'
-import { SocialButton } from '../social-buttons'
+import { SocialButton } from './social-buttons'
 
 export const Header = () => {
   return (
-    <div className="text-left flex items-center lg:flex-row lg:items-center gap-3 lg:gap-20 justify-start lg:justify-center">
-      <div className="lg:h-48 lg:w-48 relative w-32 h-32">
+    <div className="text-left flex items-center lg:flex-row lg:items-center gap-5 lg:gap-20 justify-center">
+      <div className="lg:h-48 lg:w-48 relative w-28 h-28">
         <Image
           src="/profilepic.png"
           alt="Atanas Yonkov Profile Picture"
@@ -21,7 +21,8 @@ export const Header = () => {
           <div className="mr-4 lg:mr-10">
             <ModeToggle />
           </div>
-          <SocialButton variant="FileText" link="https://nbviewer.org/github/ayonkov1/cv-resume/blob/main/main.pdf" />
+
+          <SocialButton variant="FileText" link="resume.pdf" />
           <SocialButton variant="Github" link="https://github.com/ayonkov1" />
           <SocialButton variant="Linkedin" link="https://www.linkedin.com/in/atanas-yonkov/" />
         </div>

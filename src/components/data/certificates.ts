@@ -13,6 +13,7 @@ export const certificates: Certificate[] = [
     issuingOrganization: 'Softuni Creative',
     issueDate: 'May 2021',
     expirationDate: 'This certification does not expire',
+    credentialID: '15971/706eecef',
     credentialURL: 'https://creative.softuni.bg/Certificates/Details/15971/706eecef',
   },
   {
