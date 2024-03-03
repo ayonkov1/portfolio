@@ -1,6 +1,8 @@
 import { ModeToggle } from '@/components/ui/light-dark-toggle'
 import Image from 'next/image'
 import { SocialButton } from '../social-buttons'
+import { DialogHeader, Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog'
+import Resume from '@/components/core/pdf-reader'
 
 export const Header = () => {
   return (
@@ -21,7 +23,16 @@ export const Header = () => {
           <div className="mr-4 lg:mr-10">
             <ModeToggle />
           </div>
-          <SocialButton variant="FileText" link="https://nbviewer.org/github/ayonkov1/cv-resume/blob/main/main.pdf" />
+          <Dialog>
+            <DialogTrigger>
+              <SocialButton variant="FileText" />
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <Resume />
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
           <SocialButton variant="Github" link="https://github.com/ayonkov1" />
           <SocialButton variant="Linkedin" link="https://www.linkedin.com/in/atanas-yonkov/" />
         </div>
