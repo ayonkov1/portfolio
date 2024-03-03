@@ -6,6 +6,7 @@ interface Role {
 interface Experience {
   title: string
   company: string
+  location?: string
   roles: Role[]
   duration: string
 }
@@ -14,13 +15,13 @@ export const experiences: Experience[] = [
   {
     title: 'Master Thesis Researcher',
     duration: 'February 2024 – Present',
-
-    company: 'CWI',
+    company: 'CWI (Centrum Wiskunde & Informatica)',
+    location: 'Amsterdam, The Netherlands',
     roles: [
       {
         description: [
-          'At the nation Institue of Mathematics and Informatics of the Netherlands I am conducting a master thesis project working on a study regarding user experience of subtitles display within extended reality (XR) environments',
-          'Developed a full-stack web application for a research project regarding automated construction of formal normative language models using Next.js and Node.js',
+          "During my master's thesis project at the Netherlands Institute of Mathematics and Informatics, I am studying the user experience of displaying subtitles in extended reality (XR) environments",
+          'Next.js and Node.js were used to develop a full-stack web application for a research project focused on automating construction of formal normative language models',
         ],
       },
     ],
@@ -28,7 +29,9 @@ export const experiences: Experience[] = [
   {
     title: 'Junior Software Engineer',
     company: 'Merkle',
-    duration: 'April 2022 – Aug. 2023',
+    location: 'Sofia, Bulgaria',
+
+    duration: 'April 2022 – Aug. 2023 (1y 6m)',
     roles: [
       {
         title: 'Junior Software Engineer',
@@ -48,21 +51,8 @@ export const experiences: Experience[] = [
   {
     title: 'Front-end Developer',
     company: 'GILO Technologies',
-    duration: 'July 2021 – Feb.2022',
-    roles: [
-      {
-        description: [
-          'Developed and implemented the foundation for the GILO Google Docs add-on using TypeScript',
-          'Developed and maintained the GILO Microsoft Word add-on using TypeScript and Node.js',
-          'Created short animations with marketing purposes using Adobe AfterEffects',
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Front-end Developer',
-    company: 'GILO Technologies',
-    duration: 'July 2021 – Feb.2022',
+    location: 'Rijswijk, The Netherlands',
+    duration: 'July 2021 – Feb.2022 (8m)',
     roles: [
       {
         description: [
