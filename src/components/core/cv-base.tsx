@@ -1,11 +1,11 @@
 import React from 'react'
-import Summary from './sections/summary'
-import Experience from './sections/experience'
-import Education from './sections/education'
+import Summary from '../custom/sections/summary'
+import Experience from '../custom/sections/experience'
+import Education from '../custom/sections/education'
 
-import TechnicallSkills from './sections/technical-skills'
-import { Header } from './sections/header'
-import { Certificates } from './sections/certificates'
+import TechnicallSkills from '../custom/sections/technical-skills'
+import { Header } from './header'
+import { Certificates } from '../custom/sections/certificates'
 
 const CVComponent = () => {
   return (

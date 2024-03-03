@@ -19,7 +19,7 @@ export const Certificates = () => {
               {certificate.issuingOrganization}
             </a>
 
-            <div className="flex gap-4 justify-between font-mono text-slate-400 dark:text-slate-600">
+            <div className="flex gap-4 justify-between text-sm font-mono text-slate-400 dark:text-slate-600">
               {certificate.credentialID ? (
                 <Text text={`Reference: ${certificate.credentialID}`} />
               ) : (
