@@ -13,7 +13,7 @@ export const education: Education[] = [
     name: 'University of Amsterdam',
     location: 'Amsterdam, The Netherlands',
     degree: 'Master of Science in Information Studies',
-    GPA: 'Current GPA: 8',
+    GPA: 'Current GPA: 8.1',
     duration: 'Aug. 2023 – Present',
   },
   {
