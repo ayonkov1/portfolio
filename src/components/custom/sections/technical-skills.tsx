@@ -24,7 +24,7 @@ const TechnicallSkills = () => {
 
       <div className="py-1 flex flex-col lg:flex-row gap-1 lg:gap-4">
         {projects.map((project, index) => (
-          <div key={index} className="border rounded-lg p-4 my-2 shadow-xl bg-white dark:bg-black">
+          <div key={index} className="border rounded-lg p-4 my-2 shadow-xl bg-slate-50 dark:bg-slate-950">
             <SubTitle text={project.title} />
             <Text text={project.description} />
           </div>
