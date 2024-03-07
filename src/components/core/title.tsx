@@ -7,5 +7,5 @@ export const SubTitle = ({ text }: { text: string }) => {
 }
 
 export const Text = ({ text }: { text: string | null }) => {
-  return <p className="text-sm lg:text-base">{text}</p>
+  return <p className="text-sm xl:text-base">{text}</p>
 }

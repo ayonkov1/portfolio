@@ -15,9 +15,12 @@ const CVComponent = () => {
         <Summary />
         <TechnicallSkills />
         <Certificates />
-        <Experience />
         {/* <Skills /> */}
-        <Education />
+
+        <div className="flex flex-col 2xl:flex-row max-l-full 2xl:[&>div]:max-w-xl lg:gap-10 justify-between">
+          <Experience />
+          <Education />
+        </div>
       </div>
     </div>
   )
