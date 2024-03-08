@@ -7,7 +7,7 @@ export const Certificates = () => {
     <div>
       <Title text="Certificates" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 py-1 pb-6 pt-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 py-1 pb-6 pt-2">
         {certificates.map((certificate, index) => (
           <div key={index} className="border rounded-lg p-4 shadow-lg bg-slate-50 dark:bg-black">
             <SubTitle text={certificate.name} />
