@@ -10,7 +10,7 @@ export const BentoGrid = ({ className, children }: { className?: string; childre
 
 const LinkButton = ({ children, link }: { children: ReactNode; link: string }) => {
   return (
-    <button className="py-1 px-2 rounded-xl bg-blue-400  text-white hover:text-blue-500 font-bold text-sm transition duration-200 hover:bg-white border-2 dark:hover:border-blue-900 hover:border-blue-400 min-h-9 max-w-36 overflow-ellipsis">
+    <button className="py-1 px-2 rounded-xl bg-blue-400  text-white hover:text-blue-500 font-bold text-sm transition hover:bg-white border-2 dark:hover:border-blue-900 hover:border-blue-400 min-h-9 max-w-36 overflow-ellipsis">
       <Link href={link} target="_blank" referrerPolicy="no-referrer">
         {children}
       </Link>
@@ -41,7 +41,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'shadow-md row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 bg-slate-50 dark:bg-slate-950 border justify-between flex flex-col [&>img]:grayscale [&>img]:hover:grayscale-0 [&>img]:transition',
+        'shadow-md row-span-1 rounded-3xl group/bento hover:shadow-xl transition shadow-input dark:shadow-none p-4 bg-slate-50 dark:bg-slate-800 border justify-between flex flex-col [&>img]:grayscale [&>img]:hover:grayscale-0 [&>img]:transition',
         className
       )}
     >
@@ -50,9 +50,9 @@ export const BentoGridItem = ({
         src={header}
         alt="image of project"
       />
-      <div className="group-hover/bento:translate-x-1 transition duration-200 mt-2 lg:mt-6">
+      <div className="group-hover/bento:translate-x-1 transition mt-2 lg:mt-6">
         {tags?.map((tag, i) => (
-          <Badge className="mr-1 border-2" key={i} variant="outline">
+          <Badge className="mr-1 border-2 dark:border-slate-600" key={i} variant="outline">
             {tag}
           </Badge>
         ))}
