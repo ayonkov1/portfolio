@@ -9,7 +9,7 @@ export const Header = () => {
         <Image
           src="/profilepic.png"
           alt="Atanas Yonkov Profile Picture"
-          className="rounded-lg brightness-110 dark:brightness-90 shadow-2xl drop-shadow-2xl border"
+          className="rounded-lg brightness-110 shadow-xl border"
           layout="fill"
           priority
         />

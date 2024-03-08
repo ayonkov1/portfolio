@@ -7,6 +7,7 @@ import TechnicallSkills from '../custom/sections/technical-skills'
 import { Header } from './header'
 import { Certificates } from '../custom/sections/certificates'
 import { Projects } from '../custom/sections/projects'
+import { FooterFlowbite } from './footer'
 
 const CVComponent = () => {
   return (
@@ -22,6 +23,7 @@ const CVComponent = () => {
           <Education />
         </div>
       </div>
+      <FooterFlowbite />
     </div>
   )
 }

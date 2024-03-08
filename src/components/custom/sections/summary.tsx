@@ -8,7 +8,7 @@ const Summary = () => {
         <div className="min-w-80">
           <div className="w-full relative">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-300 to-blue-700 transform shadow-xl border bg-red-500 rounded-xl" />
-            <div className="relative shadow-xl bg-slate-50 dark:bg-slate-950 border p-6 h-full overflow-hidden rounded-xl flex flex-col justify-end items-start backdrop-blur-xl">
+            <div className="relative shadow-xl bg-slate-50 dark:bg-slate-800 border p-6 h-full overflow-hidden rounded-xl flex flex-col justify-end items-start backdrop-blur-xl">
               <Title text="Summary" />
 
               <div className="flex flex-col lg:flex-row gap-1 lg:gap-10">
