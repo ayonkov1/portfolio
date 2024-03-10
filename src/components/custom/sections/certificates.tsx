@@ -13,6 +13,7 @@ export const Certificates = () => {
             <SubTitle text={certificate.name} />
             <Link
               href={certificate.credentialURL}
+              as={certificate.credentialURL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline font-mono"
