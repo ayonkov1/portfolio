@@ -11,8 +11,8 @@ const Summary = () => {
             <div className="relative shadow-xl bg-slate-50 dark:bg-slate-800 border p-6 h-full overflow-hidden rounded-xl flex flex-col justify-end items-start backdrop-blur-xl">
               <Title text="Summary" />
 
-              <div className="flex flex-col lg:flex-row gap-1 lg:gap-10">
-                <p className="font-normal text-sm lg:text-base text-gray-900 dark:text-slate-200 relative z-50 mt-2">
+              <div className="flex flex-col lg:flex-row gap-1 lg:gap-10 indent-6">
+                <p className="font-normal text-sm lg:text-base text-gray-900 dark:text-slate-200 relative z-50 mt-2 hyphens-auto">
                   I am a versatile software engineer/developer (up for you to decide) with a strong foundation in an array of
                   programming languages and frameworks, complemented by hands-on experience across various domains. With passion
                   about Front-end and strong foundation in JavaScript, TypeScript, Python, and SQL, among others, I have

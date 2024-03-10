@@ -11,7 +11,7 @@ export const BentoGrid = ({ className, children }: { className?: string; childre
 const LinkButton = ({ children, link }: { children: ReactNode; link: string }) => {
   return (
     <button className="py-1 px-2 rounded-xl bg-blue-400  text-white hover:text-blue-500 font-bold text-sm transition hover:bg-white border-2 dark:hover:border-blue-900 hover:border-blue-400 min-h-9 max-w-36 overflow-ellipsis">
-      <Link href={link} target="_blank" referrerPolicy="no-referrer">
+      <Link href={link} as={link} target="_blank" referrerPolicy="no-referrer">
         {children}
       </Link>
     </button>
