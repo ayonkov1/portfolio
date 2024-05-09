@@ -46,7 +46,7 @@ export const BentoGridItem = ({
       )}
     >
       <img
-        className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover border opacity-90 dark:brightness-75"
+        className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover opacity-90 dark:brightness-75"
         src={header}
         alt="image of project"
       />

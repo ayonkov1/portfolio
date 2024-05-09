@@ -15,6 +15,9 @@ export const education: Education[] = [
     degree: 'Master of Science in Information Studies',
     GPA: 'Current GPA: 8.1',
     duration: 'Aug. 2023 – Present',
+    activities: [
+      'Next.js and Node.js were used to develop a full-stack web application for a research project focused on automating construction of formal normative language models',
+    ],
   },
   {
     name: 'Halmstad University of Applied Sciences',
