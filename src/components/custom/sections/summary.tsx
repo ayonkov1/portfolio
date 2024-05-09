@@ -9,21 +9,22 @@ const Summary = () => {
           <div className="w-full relative">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-300 to-blue-700 transform shadow-xl border bg-red-500 rounded-xl" />
             <div className="relative shadow-xl bg-slate-50 dark:bg-slate-800 border p-6 h-full overflow-hidden rounded-xl flex flex-col justify-end items-start backdrop-blur-xl">
-              <Title text="Summary" />
+              {/* <Title text="Summary" /> */}
 
-              <div className="flex flex-col lg:flex-row gap-1 lg:gap-10 indent-6">
+              <div className="flex flex-col lg:flex-row gap-1 lg:gap-6">
                 <p className="font-normal text-sm lg:text-base text-gray-900 dark:text-slate-200 relative z-50 mt-2 hyphens-auto">
-                  I am a versatile software engineer/developer (up for you to decide) with a strong foundation in an array of
-                  programming languages and frameworks, complemented by hands-on experience across various domains. With passion
-                  about Front-end and strong foundation in JavaScript, TypeScript, Python, and SQL, among others, I have
-                  successfully leveraged frameworks such as React, Node.js, and Next.js to deliver innovative solutions.
+                  Atanas is a versatile software engineer/developer (up for you to decide) with a passion about Front-end and
+                  strong foundation in JavaScript and TypeScript. He has successfully leveraged frameworks such as React, Node.js,
+                  and Next.js to deliver innovative solutions. Atanas does not know everything but he quickly learns and adapts.
+                  He would always prefer user experience over interface, but would rather combine both. He wants to be inspired by
+                  what he does and leave an inspiring work.
                 </p>
-                <p className="font-normal text-sm lg:text-base text-gray-900 dark:text-slate-200 relative z-50 mt-2">
+                <p className="font-normal text-sm lg:text-base text-gray-900 dark:text-slate-200 relative z-50 mt-2 hyphens-auto">
                   From cutting-edge research on user experience in extended reality environments to the development of internal
-                  rewards systems and crafting compelling marketing animations, my journey reflects a commitment to excellence and
-                  a passion for pushing the boundaries of technology. With a Master's in Information Studies underway and a track
-                  record of contributions in both academic and professional settings, I am poised to thrive in any dynamic
-                  software engineering role.
+                  rewards systems and crafting compelling marketing animations, his journey reflects a commitment to excellence
+                  and a passion for pushing the boundaries of technology. With a Master's in Information Studies underway and a
+                  track record of contributions in both academic and professional settings, he thrives in any dynamic software
+                  engineering role.
                 </p>
               </div>
             </div>

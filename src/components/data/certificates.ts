@@ -59,7 +59,7 @@ export const certificates: Certificate[] = [
   {
     name: 'Introduction to Tidyverse',
     issuingOrganization: 'DataCamp',
-    issueDate: 'Sep. 2019',
+    issueDate: 'Sep 2019',
     expirationDate: 'This certification does not expire',
     credentialID: 'Y7ZN6VP5743C',
     credentialURL: 'https://www.datacamp.com/statement-of-accomplishment/course/ed885ce1dd657113464082e4864df8f7312b1602',

@@ -4,7 +4,7 @@ import React from 'react'
 const projects = [
   {
     title: 'Languages',
-    description: 'JavaScript, TypeScript, Python, SQL(MySQL), HTML/CSS, R',
+    description: 'JavaScript, TypeScript, Python, C#, SQL(MySQL), R, HTML/CSS',
   },
   {
     title: 'Frameworks',
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: 'Developer Tools',
-    description: 'Git, Docker, Google Cloud Platform, VS Code, Eclipse, Postman',
+    description: 'Git, Unity, VS Code, Eclipse, Postman',
   },
 ]
 
@@ -21,8 +21,7 @@ const TechnicallSkills = () => {
   return (
     <div>
       <Title text="Technical Skills" />
-
-      <div className="py-1 flex flex-col lg:flex-row gap-1 lg:gap-4">
+      <div className="py-1 flex flex-col lg:flex-row flex-grow gap-1 lg:gap-4">
         {projects.map((project, index) => (
           <div key={index} className="border rounded-lg p-4 my-2 shadow-xl bg-slate-50 dark:bg-slate-800">
             <SubTitle text={project.title} />

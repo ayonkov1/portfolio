@@ -11,7 +11,7 @@ import { FooterFlowbite } from './footer'
 
 const CVComponent = () => {
   return (
-    <div className="py-1">
+    <div className="py-1 2xl:px-96">
       <Header />
       <div className="flex flex-col mt-4 gap-4 lg:mt-10 lg:gap-10">
         <Summary />

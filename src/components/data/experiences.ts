@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
       {
         description: [
           "During my master's thesis project at the Netherlands Institute of Mathematics and Informatics, I am studying the user experience of displaying subtitles in extended reality (XR) environments",
-          'Next.js and Node.js were used to develop a full-stack web application for a research project focused on automating construction of formal normative language models',
+          'Integrated eye tracking functionality of the Meta Quest Pro into a Unity theatre application in order gather data during the study',
         ],
       },
     ],

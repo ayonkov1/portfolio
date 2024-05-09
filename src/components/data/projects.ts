@@ -58,7 +58,7 @@ export const items = [
     description: 'Shared Notes is an application where students can help other students and receive rewards for that',
     tags: ['React', 'Redux'],
     header: '/shared-notes.jpg',
-    className: 'md:col-span-2',
+    className: 'md:col-span-3',
     codeLink: 'https://github.com/ayonkov1/SharedNotes',
   },
 ]
