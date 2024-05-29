@@ -11,17 +11,25 @@ import { FooterFlowbite } from './footer'
 
 const CVComponent = () => {
   return (
-    <div className="py-1 2xl:px-96">
+    <div
+      className={`
+      py-1
+      mx-0 
+      sm:mx-12
+      md:mx-24
+      lg:mx-48
+      xl:mx-72
+      2xl:mx-96
+      `}
+    >
       <Header />
-      <div className="flex flex-col mt-4 gap-4 lg:mt-10 lg:gap-10">
+      <div className="flex flex-col mt-4 gap-4 lg:mt-10 lg:gap-6">
         <Summary />
+        <Experience />
         <TechnicallSkills />
         <Projects />
+        <Education />
         <Certificates />
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10 justify-between">
-          <Experience />
-          <Education />
-        </div>
       </div>
       <FooterFlowbite />
     </div>

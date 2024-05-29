@@ -10,7 +10,15 @@ export const BentoGrid = ({ className, children }: { className?: string; childre
 
 const LinkButton = ({ children, link }: { children: ReactNode; link: string }) => {
   return (
-    <button className="py-1 px-2 rounded-xl bg-blue-400  text-white hover:text-blue-500 font-bold text-sm transition hover:bg-white border-2 dark:hover:border-blue-900 hover:border-blue-400 min-h-9 max-w-36 overflow-ellipsis">
+    <button
+      className={`
+    py-1 px-2 rounded-xl
+    hover:bg-white
+    text-blue-900 hover:text-blue-500
+    dark:hover:border-blue-900 hover:border-blue-400 dark:invert
+    font-bold text-sm transition border border-blue-900 
+    min-h-9 max-w-36 overflow-ellipsis`}
+    >
       <Link href={link} as={link} target="_blank" referrerPolicy="no-referrer">
         {children}
       </Link>
@@ -41,15 +49,33 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'shadow-md row-span-1 rounded-3xl group/bento hover:shadow-xl transition shadow-input dark:shadow-none p-4 bg-slate-50 dark:bg-slate-800 border justify-between flex flex-col [&>img]:grayscale [&>img]:hover:grayscale-0 [&>img]:transition',
+        `shadow-md row-span-1 rounded-3xl group/bento hover:shadow-xl 
+        transition shadow-input dark:shadow-none p-4 bg-slate-50 dark:bg-slate-800 
+        border justify-between flex flex-col 
+        [&>img]:grayscale [&>img]:brightness-90 [&>img]:hover:grayscale-0 [&>img]:hover:brightness-105 [&>img]:transition
+        [&>video]:grayscale [&>video]:brightness-90 [&>video]:hover:grayscale-0 [&>video]:hover:brightness-105 [&>video]:transition`,
         className
       )}
     >
-      <img
-        className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover opacity-90 dark:brightness-75"
-        src={header}
-        alt="image of project"
-      />
+      {!header.endsWith('.webm') ? (
+        <img
+          className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover opacity-85"
+          src={header}
+          alt="image of project"
+          loading="lazy"
+          fetchPriority="low"
+        />
+      ) : (
+        <video
+          className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover opacity-85"
+          loop
+          autoPlay
+          muted
+        >
+          <source src={header} type="video/webm" />
+        </video>
+      )}
+
       <div className="group-hover/bento:translate-x-1 transition mt-2 lg:mt-6">
         {tags?.map((tag, i) => (
           <Badge className="mr-1 border-2 dark:border-slate-600" key={i} variant="outline">

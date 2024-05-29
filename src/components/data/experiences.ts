@@ -13,9 +13,9 @@ interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: 'Master Thesis Researcher',
+    title: 'Joint Master Thesis',
     duration: 'February 2024 – Present',
-    company: 'CWI (Centrum Wiskunde & Informatica)',
+    company: 'CWI (Centrum Wiskunde & Informatica) and University of Amsterdam (UvA)',
     location: 'Amsterdam, The Netherlands',
     roles: [
       {

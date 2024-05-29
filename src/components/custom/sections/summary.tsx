@@ -1,4 +1,5 @@
-import { Title } from '@/components/core/title'
+import { Text } from '@/components/core/title'
+import Link from 'next/link'
 import React from 'react'
 
 const Summary = () => {
@@ -7,25 +8,32 @@ const Summary = () => {
       <div className="py-1 flex flex-col md:flex-row gap-4 md:gap-10">
         <div className="min-w-80">
           <div className="w-full relative">
-            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-300 to-blue-700 transform shadow-xl border bg-red-500 rounded-xl" />
-            <div className="relative shadow-xl bg-slate-50 dark:bg-slate-800 border p-6 h-full overflow-hidden rounded-xl flex flex-col justify-end items-start backdrop-blur-xl">
+            <div className="absolute inset-0 h-full w-full bg-gradient-to-tr from-blue-700 to-pink-700 transform shadow-xl border bg-red-500 rounded-xl" />
+            <div className="relative shadow-xl bg-slate-50 dark:bg-slate-800 dark:bg-opacity-85 border py-3 px-4 h-full overflow-hidden rounded-xl flex flex-col justify-end items-start backdrop-blur-xl">
               {/* <Title text="Summary" /> */}
-
-              <div className="flex flex-col lg:flex-row gap-1 lg:gap-6">
-                <p className="font-normal text-sm lg:text-base text-gray-900 dark:text-slate-200 relative z-50 mt-2 hyphens-auto">
-                  Atanas is a versatile software engineer/developer (up for you to decide) with a passion about Front-end and
-                  strong foundation in JavaScript and TypeScript. He has successfully leveraged frameworks such as React, Node.js,
-                  and Next.js to deliver innovative solutions. Atanas does not know everything but he quickly learns and adapts.
-                  He would always prefer user experience over interface, but would rather combine both. He wants to be inspired by
-                  what he does and leave an inspiring work.
-                </p>
-                <p className="font-normal text-sm lg:text-base text-gray-900 dark:text-slate-200 relative z-50 mt-2 hyphens-auto">
-                  From cutting-edge research on user experience in extended reality environments to the development of internal
-                  rewards systems and crafting compelling marketing animations, his journey reflects a commitment to excellence
-                  and a passion for pushing the boundaries of technology. With a Master's in Information Studies underway and a
-                  track record of contributions in both academic and professional settings, he thrives in any dynamic software
-                  engineering role.
-                </p>
+              <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
+                <Text>
+                  Software programmer with a passion for Front-end development and a strong foundation in JavaScript and
+                  TypeScript. I have successfully leveraged frameworks such as React, Node.js, and Next.js to deliver innovative
+                  solutions. I dare to say I don't know everything, but I am curious, quickly learn, and adapt. My preference is
+                  always for user experience over interface design, but I aim to combine both. Simply put, I feel at my best when
+                  I am inspired by what I do, which maximizes my output.
+                </Text>
+                <Text>
+                  Recently, I started exploring the world of eXtended Reality (XR) environments in a scientific context. With a
+                  Master's degree in Information Studies and a project at the Netherlands Institute of Mathematics and Informatics
+                  regarding VR/AR theaters, I found a lot of value in scientific works. As{' '}
+                  <Link
+                    href="https://anthonyalicea.com/"
+                    as="https://anthonyalicea.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    Anthony Alicea
+                  </Link>{' '}
+                  puts it, "Don't imitate, understand." It's fair to say that I enjoy his courses.
+                </Text>
               </div>
             </div>
           </div>

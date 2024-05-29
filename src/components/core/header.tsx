@@ -1,5 +1,5 @@
 import { ModeToggle } from '@/components/ui/light-dark-toggle'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { SocialButton } from './social-buttons'
 
 export const Header = () => {
@@ -11,7 +11,9 @@ export const Header = () => {
           alt="Atanas Yonkov Profile Picture"
           className="rounded-lg brightness-110 shadow-xl border"
           layout="fill"
-          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          quality={75}
+          priority={false}
         />
       </div>
       <div className="flex flex-col gap-1 lg:gap-4">
