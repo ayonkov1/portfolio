@@ -30,7 +30,7 @@ export const items = [
   },
   {
     title: 'RoboJump',
-    description: '2D puzzle platformer game',
+    description: '2D Puzzle Platformer Game',
     tags: ['C#', 'Game Development'],
     header: '/robojump.webm',
     className: 'md:col-span-2',

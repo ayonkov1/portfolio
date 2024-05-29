@@ -51,15 +51,16 @@ export const BentoGridItem = ({
       className={cn(
         `shadow-md row-span-1 rounded-3xl group/bento hover:shadow-xl 
         transition shadow-input dark:shadow-none p-4 bg-slate-50 dark:bg-slate-800 
-        border justify-between flex flex-col 
-        [&>img]:grayscale [&>img]:brightness-90 [&>img]:hover:grayscale-0 [&>img]:hover:brightness-105 [&>img]:transition
-        [&>video]:grayscale [&>video]:brightness-90 [&>video]:hover:grayscale-0 [&>video]:hover:brightness-105 [&>video]:transition`,
+        border flex flex-col
+        [&>img]:grayscale [&>img]:hover:grayscale-0 [&>img]:transition
+        [&>video]:grayscale [&>video]:hover:grayscale-0 [&>video]:transition
+        `,
         className
       )}
     >
       {!header.endsWith('.webm') ? (
         <img
-          className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover opacity-85"
+          className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover hidden md:block"
           src={header}
           alt="image of project"
           loading="lazy"
@@ -67,7 +68,7 @@ export const BentoGridItem = ({
         />
       ) : (
         <video
-          className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover opacity-85"
+          className="group-hover/bento:translate-x-1 flex-1 w-full h-full min-h-[6rem] max-h-16 md:max-h-full rounded-xl fill-white object-cover hidden md:block"
           loop
           autoPlay
           muted
@@ -76,7 +77,7 @@ export const BentoGridItem = ({
         </video>
       )}
 
-      <div className="group-hover/bento:translate-x-1 transition mt-2 lg:mt-6">
+      <div className="group-hover/bento:translate-x-1 transition md:mt-2">
         {tags?.map((tag, i) => (
           <Badge className="mr-1 border-2 dark:border-slate-600" key={i} variant="outline">
             {tag}

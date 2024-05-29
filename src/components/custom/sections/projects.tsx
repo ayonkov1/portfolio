@@ -8,9 +8,9 @@ import { items } from '@/components/data/projects'
 export function Projects() {
   return (
     <div>
-      <Title text="Projects" />
+      <Title text="Projects" center />
 
-      <BentoGrid className="py-1 mt-2 md:auto-rows-[25rem] lg:gap-6 ">
+      <BentoGrid className="py-1 mt-2 gap-2">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
