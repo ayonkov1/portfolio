@@ -17,14 +17,17 @@ export function SocialButton({ variant, link }: { variant: keyof Variants; link?
   }[variant]
 
   return (
-    <Button variant="outline" size="icon">
-      {link ? (
-        <Link href={link} as={link} target="_blank">
-          <IconComponent className="h-6 w-6" />
-        </Link>
-      ) : (
-        <IconComponent className="h-6 w-6" />
-      )}
-    </Button>
+    link && (
+      <Link href={link} target="_blank">
+        <Button
+          variant="outline"
+          size="icon"
+          className={`  
+        dark:text-blue-500`}
+        >
+          <IconComponent className="h-5 w-5" />
+        </Button>
+      </Link>
+    )
   )
 }
