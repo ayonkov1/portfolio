@@ -23,7 +23,7 @@ export function SocialButton({ variant, link }: { variant: keyof Variants; link?
           variant="outline"
           size="icon"
           className={`  
-        dark:text-blue-500`}
+        dark:text-blue-400`}
         >
           <IconComponent className="h-5 w-5" />
         </Button>
