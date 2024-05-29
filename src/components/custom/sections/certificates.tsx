@@ -7,9 +7,16 @@ export const Certificates = () => {
     <div>
       <Title text="Certificates" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 py-1 pb-6 pt-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-2 py-1 pb-6 pt-2">
         {certificates.map((certificate, index) => (
-          <div key={index} className="flex flex-col border rounded-lg p-4 shadow-lg bg-slate-50 dark:bg-slate-800">
+          <div
+            key={index}
+            className={`flex flex-col 
+          border lg:rounded-2xl p-4 shadow-lg 
+          bg-slate-50 dark:bg-slate-800
+          md:rounded-2xl
+          first:rounded-t-2xl last:rounded-b-2xl`}
+          >
             <p className="text-blue-500 font-mono">{certificate.issuingOrganization}</p>
             <SubTitle text={certificate.name} />
 

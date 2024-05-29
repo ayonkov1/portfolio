@@ -26,7 +26,7 @@ const TechnicallSkills = () => {
           <div
             key={index}
             className={`
-            border px-4 py-2 shadow-xl 
+            border px-4 py-2 shadow-md 
           bg-slate-50 dark:bg-slate-800
             lg:rounded-2xl last:rounded-b-2xl first:rounded-t-2xl 
             basis-auto flex-grow`}
@@ -36,9 +36,9 @@ const TechnicallSkills = () => {
           </div>
         ))}
       </div>
-      <p className="text-base">
-        * - Advanced Newbie <br /> ** - Newbie
-      </p>
+      <Text>
+        * - slightly advanced newbie <br /> ** - newbie
+      </Text>
     </div>
   )
 }

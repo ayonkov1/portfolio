@@ -3,10 +3,10 @@ import { Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, Footer
 export function FooterFlowbite() {
   let currentYear = new Date().getFullYear()
   return (
-    <Footer container>
-      <div className="w-full text-center">
-        <div className="w-full flex flex-col items-center md:flex-row md:justify-between">
-          <FooterCopyright by="Atanas Yonkov" year={currentYear} />
+    <Footer container className="rounded-2xl bg-slate-50 dark:bg-slate-800 border my-4">
+      <div className="w-full text-center ">
+        <div className="w-full flex flex-col items-center md:flex-row md:justify-between rounded-2xl">
+          <FooterCopyright by="Atanas Yonkov | Resume" year={currentYear} />
 
           <FooterLinkGroup>
             <FooterLink href="mailto:atanasyonkov1@gmail.com">E-mail</FooterLink>

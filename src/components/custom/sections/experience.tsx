@@ -8,7 +8,7 @@ function ExperienceSection() {
       <Title text="Experience" />
 
       {experiences.map((exp, index) => (
-        <div key={index} className="text-sm lg:text-lg py-1 pb-6">
+        <div key={index} className="text-sm lg:text-lg py-1 pb-2">
           <p className="text-md lg:text-2xl font-semibold pt-1 text-blue-500">{`${exp.title} at ${exp.company}`}</p>
           <div className="flex flex-col lg:flex-row gap-1 lg:gap-4 text-sm">
             <p className="font-bold">{exp.location}</p>
@@ -17,7 +17,7 @@ function ExperienceSection() {
           <div className="">
             {exp.roles.map((role, roleIndex) => (
               <div key={roleIndex}>
-                <p className="font-semibold pt-4">{role.title}</p>
+                <p className="font-semibold pt-2">{role.title}</p>
                 <ul className="list-disc pl-4 text-base">
                   {role.description.map((desc, index) => (
                     <li key={index}>
