@@ -7,7 +7,7 @@ export const Header = () => {
     <div className="text-left flex lg:flex-row gap-5 lg:gap-10 justify-start">
       <div className="lg:h-52 lg:w-52 relative w-32 h-32">
         <Image
-          src="/profilepic.png"
+          src="/profilepic.webp"
           alt="Atanas Yonkov Profile Picture"
           className="rounded-lg brightness-110 shadow-xl border"
           layout="fill"
@@ -17,10 +17,10 @@ export const Header = () => {
       </div>
       <div className="flex flex-col gap-1 md:gap-2 justify-between">
         <h1 className="text-xl lg:text-4xl font-extrabold relative z-20 text-blue-900 dark:text-blue-400">Atanas Yonkov</h1>
-        <p className="text-base lg:text-xl font-mono font-semibold">
-          software engineer <br /> from Sofia, Bulgaria
+        <p className="text-base lg:text-xl">
+          software engineer <br /> from Sofia, Bulgaria 🇧🇬
         </p>
-        <p className="hidden lg:block text-base lg:text-xl font-mono font-semibold">living in Amsterdam, The Netherlands</p>
+        <p className="hidden lg:block text-base lg:text-xl">📍 living in Amsterdam, The Netherlands</p>
 
         <div className="flex gap-1 lg:gap-4 align-middle items-center justify-between lg:justify-start">
           <div className="mr-4 lg:mr-10">
