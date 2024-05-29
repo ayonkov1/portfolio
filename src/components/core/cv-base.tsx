@@ -23,7 +23,7 @@ const CVComponent = () => {
       `}
     >
       <Header />
-      <div className="flex flex-col mt-4 gap-4 lg:mt-10 lg:gap-6">
+      <div className="flex flex-col mt-4 gap-4 lg:gap-6">
         <Summary />
         <Experience />
         <TechnicallSkills />

@@ -13,11 +13,11 @@ const Summary = () => {
               {/* <Title text="Summary" /> */}
               <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
                 <Text>
-                  Software programmer with a passion for Front-end development and a strong foundation in JavaScript and
-                  TypeScript. I have successfully leveraged frameworks such as React, Node.js, and Next.js to deliver innovative
-                  solutions. I dare to say I don't know everything, but I am curious, quickly learn, and adapt. My preference is
-                  always for user experience over interface design, but I aim to combine both. Simply put, I feel at my best when
-                  I am inspired by what I do, which maximizes my output.
+                  Software engineer with a passion for Front-end development and a strong foundation in JavaScript and TypeScript.
+                  I have successfully leveraged frameworks such as React, Node.js, and Next.js to deliver innovative solutions. I
+                  dare to say I don't know everything, but I am curious, quickly learn, and adapt. My preference is always for
+                  user experience over interface design, but I aim to combine both. Simply put, I feel at my best when I am
+                  inspired by what I do, which maximizes my output.
                 </Text>
                 <Text>
                   Recently, I started exploring the world of eXtended Reality (XR) environments in a scientific context. With a
