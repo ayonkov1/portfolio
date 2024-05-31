@@ -9,7 +9,7 @@ const Education = () => {
 
       {education.map((edu, index) => (
         <div key={index} className="text-sm lg:text-lg py-1 pb-2">
-          <p className="text-md lg:text-2xl font-semibold pt-1 text-blue-500 hyphens-auto">
+          <p className="text-md lg:text-2xl font-semibold pt-1 text-blue-500 dark:text-blue-200 hyphens-auto">
             {edu.degree ? `${edu.degree}` : `${edu.program}`}
           </p>
           <div className="flex flex-col gap-1 lg:gap-4 text-sm pb-2">

@@ -1,8 +1,9 @@
 import { cn } from '@/lib/utils'
 import { Badge } from './badge'
-import { Code2, Earth } from 'lucide-react'
+import { Code2, ExternalLink } from 'lucide-react'
 import { ReactNode } from 'react'
 import Link from 'next/link'
+import { Text } from '../core/title'
 
 export const BentoGrid = ({ className, children }: { className?: string; children?: React.ReactNode }) => {
   return <div className={cn('grid md:auto-rows-[25rem] grid-cols-1 md:grid-cols-6 gap-4 max-w-8xl', className)}>{children}</div>
@@ -12,14 +13,22 @@ const LinkButton = ({ children, link }: { children: ReactNode; link: string }) =
   return (
     <button
       className={`
-    py-1 px-2 rounded-xl
-    hover:bg-white
-    text-blue-900 hover:text-blue-500
-    dark:hover:border-blue-900 hover:border-blue-400 dark:invert
-    font-bold text-sm transition border border-blue-900 
-    min-h-9 max-w-36 overflow-ellipsis`}
+      
+    py-1 px-2 rounded-xl border-2
+    hover:bg-white dark:hover:bg-slate-700
+    text-blue-900 hover:text-blue-500  
+    dark:text-blue-100 dark:hover:border-blue-100 hover:border-blue-400
+    font-bold text-sm transition border-blue-900 dark:border-slate-600
+    min-h-9 flex-grow`}
     >
-      <Link href={link} as={link} target="_blank" referrerPolicy="no-referrer">
+      <Link
+        href={link}
+        as={link}
+        target="_blank"
+        referrerPolicy="no-referrer"
+        className={`
+      flex flex-row-reverse flex-grow justify-center items-center gap-2`}
+      >
         {children}
       </Link>
     </button>
@@ -87,22 +96,22 @@ export const BentoGridItem = ({
         <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300 overflow-ellipsis">
           {description}
         </div>
-        <div className="flex justify-between gap-2 mt-2 lg:mt-6">
-          {articleLink && <LinkButton link={articleLink}>Read the article</LinkButton>}
-
-          <div className="flex gap-2">
-            {codeLink && (
-              <LinkButton link={codeLink}>
-                <Code2 className="h-4 w-4" />
-              </LinkButton>
-            )}
-
-            {prodLink && (
-              <LinkButton link={prodLink}>
-                <Earth className="h-4 w-4" />
-              </LinkButton>
-            )}
-          </div>
+        <div className="flex flex-row gap-2 xl:gap-6 mt-2 lg:mt-6">
+          {articleLink && (
+            <LinkButton link={articleLink}>
+              <Text>Read the article</Text>
+            </LinkButton>
+          )}
+          {codeLink && (
+            <LinkButton link={codeLink}>
+              <Text>Code</Text> <Code2 className="h-5 w-5" />
+            </LinkButton>
+          )}
+          {prodLink && (
+            <LinkButton link={prodLink}>
+              <Text>Preview</Text> <ExternalLink className="h-4 w-4" />
+            </LinkButton>
+          )}
         </div>
       </div>
     </div>

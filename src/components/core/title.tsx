@@ -4,14 +4,14 @@ type Props = { children?: ReactNode; text?: string }
 
 export const Title = ({ text, center }: { text: string; center?: boolean }) => {
   return (
-    <h1 className={`text-lg lg:text-2xl font-bold relative z-20 text-blue-900 dark:text-blue-400 ${center && 'text-center'}`}>
+    <h1 className={`text-lg lg:text-2xl font-bold relative z-20 text-blue-900 dark:text-blue-300 ${center && 'text-center'}`}>
       {text}
     </h1>
   )
 }
 
 export const SubTitle = ({ text }: { text: string }) => {
-  return <h3 className="text-md lg:text-xl font-semibold text-blue-900 dark:text-blue-400 hyphens-auto">{text}</h3>
+  return <h3 className="text-md lg:text-xl font-semibold text-blue-900 dark:text-blue-200 hyphens-auto">{text}</h3>
 }
 
 export const Text = ({ children, text }: Props) => {
