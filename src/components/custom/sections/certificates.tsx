@@ -1,11 +1,13 @@
-import { SubTitle, Title, Text } from '@/components/core/title'
+import { SubTitle, Title, Text, TitleWithDivider } from '@/components/core/title'
 import { certificates } from '@/components/data/certificates'
 import Link from 'next/link'
 
 export const Certificates = () => {
   return (
     <div>
-      <Title text="Certificates" />
+      <TitleWithDivider>
+        <Title text="CERTIFICATES" />
+      </TitleWithDivider>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-2 py-1 pb-6 pt-2">
         {certificates.map((certificate, index) => (
@@ -17,10 +19,11 @@ export const Certificates = () => {
           md:rounded-2xl
           first:rounded-t-2xl last:rounded-b-2xl`}
           >
-            <p className="text-blue-500 font-mono">{certificate.issuingOrganization}</p>
             <SubTitle text={certificate.name} />
 
-            <div className="flex mt-auto gap-4 justify-between font-mono text-slate-400 dark:text-slate-600 text-xs">
+            <p className="text-blue-500">{certificate.issuingOrganization}</p>
+
+            <div className="flex mt-auto gap-4 justify-between font-mono text-slate-400 text-xs">
               {certificate.credentialID ? (
                 <Link
                   href={certificate.credentialURL}
@@ -29,7 +32,7 @@ export const Certificates = () => {
                   rel="noopener noreferrer"
                   className="underline font-mono"
                 >
-                  Ref: {certificate.credentialID}
+                  {certificate.credentialID}
                 </Link>
               ) : (
                 <p>{`Reference: N/A`}</p>

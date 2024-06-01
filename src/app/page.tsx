@@ -14,7 +14,7 @@ export default function Home() {
           className={`
         fixed bg-cover pointer-events-none inset-0 items-center 
         justify-center dark:bg-black bg-white 
-        [mask-image:radial-gradient(ellipse_at_center,transparent_65%,black)]`}
+        [mask-image:radial-gradient(ellipse_at_center,transparent_100%,black)]`}
         ></div>
         <CVComponent />
       </div>

@@ -1,4 +1,4 @@
-import { SubTitle, Title, Text } from '@/components/core/title'
+import { SubTitle, Title, Text, TitleWithDivider } from '@/components/core/title'
 import React from 'react'
 
 const projects = [
@@ -21,6 +21,9 @@ const projects = [
 const TechnicallSkills = () => {
   return (
     <div>
+      <TitleWithDivider>
+        <Title text="SKILLS" />
+      </TitleWithDivider>
       <div className="py-1 flex flex-wrap flex-col lg:flex-row flex-grow lg:gap-2">
         {projects.map((project, index) => (
           <div

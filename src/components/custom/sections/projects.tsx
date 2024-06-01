@@ -2,14 +2,13 @@ import React from 'react'
 
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid'
 
-import { Title } from '@/components/core/title'
+import { Title, TitleWithDivider } from '@/components/core/title'
 import { items } from '@/components/data/projects'
 
 export function Projects() {
   return (
     <div>
-      <Title text="Projects" center />
-
+      <Title text="PROJECTS" />
       <BentoGrid className="py-1 mt-2 gap-2">
         {items.map((item, i) => (
           <BentoGridItem

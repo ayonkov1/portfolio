@@ -1,15 +1,16 @@
 import { ModeToggle } from '@/components/ui/light-dark-toggle'
 import Image from 'next/legacy/image'
 import { SocialButton } from './social-buttons'
+import { ReactNode } from 'react'
 
-export const Header = () => {
+export const Header = (): ReactNode => {
   return (
     <div className="text-left flex lg:flex-row gap-5 lg:gap-10 justify-start">
       <div className="lg:h-52 lg:w-52 relative w-32 h-32">
         <Image
           src="/profilepic.webp"
           alt="Atanas Yonkov Profile Picture"
-          className="rounded-lg brightness-110 shadow-xl border"
+          className="rounded-3xl brightness-110 shadow-xl border"
           layout="fill"
           quality={75}
           loading="lazy"
@@ -23,7 +24,7 @@ export const Header = () => {
         <p className="hidden lg:block text-base lg:text-xl">📍 living in Amsterdam, The Netherlands</p>
 
         <div className="flex gap-1 lg:gap-4 align-middle items-center justify-between lg:justify-start">
-          <div className="mr-4 lg:mr-10">
+          <div className="mr-4 lg:mr-10 ">
             <ModeToggle />
           </div>
 
