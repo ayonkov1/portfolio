@@ -80,9 +80,9 @@ const CVComponent = () => {
       2xl:mx-96
       `}
     >
-      <div className="relative w-full">
+      {/* <div className="relative w-full">
         <FloatingNav navItems={navItems} />
-      </div>
+      </div> */}
       <Header />
       <div className="flex flex-col mt-4 gap-4 lg:gap-6">
         <Summary />
