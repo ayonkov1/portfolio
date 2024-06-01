@@ -1,8 +1,9 @@
 import { ModeToggle } from '@/components/ui/light-dark-toggle'
 import Image from 'next/legacy/image'
 import { SocialButton } from './social-buttons'
+import { ReactNode } from 'react'
 
-export const Header = () => {
+export const Header = (): ReactNode => {
   return (
     <div className="text-left flex lg:flex-row gap-5 lg:gap-10 justify-start">
       <div className="lg:h-52 lg:w-52 relative w-32 h-32">
