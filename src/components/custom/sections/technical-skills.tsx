@@ -1,4 +1,4 @@
-import { SubTitle, Title, Text } from '@/components/core/title'
+import { SubTitle, Title, Text, TitleWithDivider } from '@/components/core/title'
 import React from 'react'
 
 const projects = [
@@ -21,13 +21,6 @@ const projects = [
 const TechnicallSkills = () => {
   return (
     <div>
-      <div className="inline-flex items-center justify-start w-full mb-2">
-        <span className="pr-3">
-          <Title text="SKILLS" />
-        </span>
-        <hr className="w-full h-px bg-blue-900 dark:bg-blue-300 border-0" />
-      </div>
-
       <div className="py-1 flex flex-wrap flex-col lg:flex-row flex-grow lg:gap-2">
         {projects.map((project, index) => (
           <div

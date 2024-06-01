@@ -1,16 +1,13 @@
-import { Title, Text } from '@/components/core/title'
+import { Title, Text, TitleWithDivider } from '@/components/core/title'
 import React from 'react'
 import { experiences } from '@/components/data/experiences'
 
 function ExperienceSection() {
   return (
     <div>
-      <div className="inline-flex items-center justify-start w-full">
-        <span className="pr-3">
-          <Title text="EXPERIENCE" />
-        </span>
-        <hr className="w-full h-px bg-blue-900 dark:bg-blue-300 border-0" />
-      </div>
+      <TitleWithDivider>
+        <Title text="EXPERIENCE" />
+      </TitleWithDivider>
 
       {experiences.map((exp, index) => (
         <div key={index} className="text-sm lg:text-lg py-1 pb-2">

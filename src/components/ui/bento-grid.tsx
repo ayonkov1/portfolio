@@ -14,11 +14,11 @@ const LinkButton = ({ children, link }: { children: ReactNode; link: string }) =
     <button
       className={`
     py-1 px-2 rounded-xl border
-    hover:bg-white dark:hover:bg-slate-700
-    text-blue-900 hover:text-blue-500  
-    dark:text-blue-100 dark:hover:border-blue-100 hover:border-blue-400
-    text-sm transition border-blue-900 dark:border-slate-600
-    min-h-9 flex-grow`}
+    text-sm transition min-h-9 flex-grow
+    text-blue-900 border-blue-900 hover:bg-slate-200 hover:border-blue-300
+    dark:text-blue-100 dark:hover:border-blue-100 dark:hover:bg-slate-700
+    dark:border-slate-600
+    `}
     >
       <Link
         href={link}
@@ -98,17 +98,17 @@ export const BentoGridItem = ({
         <div className="flex flex-row gap-3 mt-2 lg:mt-6">
           {articleLink && (
             <LinkButton link={articleLink}>
-              <Text>Article</Text> <Newspaper className="h-4 w-4" />
+              <Text>article</Text> <Newspaper className="h-4 w-4" />
             </LinkButton>
           )}
           {codeLink && (
             <LinkButton link={codeLink}>
-              <Text>Code</Text> <Code2 className="h-4 w-4" />
+              <Text>code</Text> <Code2 className="h-4 w-4" />
             </LinkButton>
           )}
           {prodLink && (
             <LinkButton link={prodLink}>
-              <Text>Live</Text> <ExternalLink className="h-4 w-4" />
+              <Text>live</Text> <ExternalLink className="h-4 w-4" />
             </LinkButton>
           )}
         </div>

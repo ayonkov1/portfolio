@@ -17,3 +17,12 @@ export const SubTitle = ({ text }: { text: string }) => {
 export const Text = ({ children, text }: Props) => {
   return <p className="text-sm lg:text-base hyphens-auto">{children || text}</p>
 }
+
+export const TitleWithDivider = ({ children }: Props) => {
+  return (
+    <div className="inline-flex items-center justify-start w-full">
+      <span className="pr-3">{children}</span>
+      <hr className="w-full h-px border" />
+    </div>
+  )
+}
