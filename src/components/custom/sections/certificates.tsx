@@ -5,6 +5,10 @@ import Link from 'next/link'
 export const Certificates = () => {
   return (
     <div>
+      <TitleWithDivider>
+        <Title text="CERTIFICATES" />
+      </TitleWithDivider>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-2 py-1 pb-6 pt-2">
         {certificates.map((certificate, index) => (
           <div

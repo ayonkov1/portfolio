@@ -33,35 +33,35 @@ const CVComponent = () => {
   const navItems = [
     {
       name: 'Experience',
-      icon: <SquareGantt className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <SquareGantt className="h-5 w-5 text-neutral-500 dark:text-white" />,
       onclick: () => {
         sectionRefs.experience.current?.scrollIntoView({ behavior: 'smooth' })
       },
     },
     {
       name: 'Projects',
-      icon: <Paintbrush className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <Paintbrush className="h-5 w-5 text-neutral-500 dark:text-white" />,
       onclick: () => {
         sectionRefs.projects.current?.scrollIntoView({ behavior: 'smooth' })
       },
     },
     {
       name: 'Skills',
-      icon: <Binary className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <Binary className="h-5 w-5 text-neutral-500 dark:text-white" />,
       onclick: () => {
         sectionRefs.skills.current?.scrollIntoView({ behavior: 'smooth' })
       },
     },
     {
       name: 'Education',
-      icon: <GraduationCap className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <GraduationCap className="h-5 w-5 text-neutral-500 dark:text-white" />,
       onclick: () => {
         sectionRefs.education.current?.scrollIntoView({ behavior: 'smooth' })
       },
     },
     {
       name: 'Certificates',
-      icon: <ShieldCheck className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <ShieldCheck className="h-5 w-5 text-neutral-500 dark:text-white" />,
       onclick: () => {
         sectionRefs.certificates.current?.scrollIntoView({ behavior: 'smooth' })
       },

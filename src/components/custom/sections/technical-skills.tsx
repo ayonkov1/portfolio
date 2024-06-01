@@ -21,6 +21,9 @@ const projects = [
 const TechnicallSkills = () => {
   return (
     <div>
+      <TitleWithDivider>
+        <Title text="SKILLS" />
+      </TitleWithDivider>
       <div className="py-1 flex flex-wrap flex-col lg:flex-row flex-grow lg:gap-2">
         {projects.map((project, index) => (
           <div
