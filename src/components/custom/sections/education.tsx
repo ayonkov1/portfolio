@@ -5,8 +5,12 @@ import React from 'react'
 const Education = () => {
   return (
     <div>
-      <Title text="Education" />
-
+      <div className="inline-flex items-center justify-start w-full">
+        <span className="pr-3">
+          <Title text="EDUCATION" />
+        </span>
+        <hr className="w-full h-px bg-blue-900 dark:bg-blue-300 border-0" />
+      </div>
       {education.map((edu, index) => (
         <div key={index} className="text-sm lg:text-lg py-1 pb-2">
           <p className="text-md lg:text-2xl font-semibold pt-1 text-blue-500 dark:text-blue-200 hyphens-auto">

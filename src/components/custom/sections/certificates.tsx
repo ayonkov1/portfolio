@@ -5,8 +5,12 @@ import Link from 'next/link'
 export const Certificates = () => {
   return (
     <div>
-      <Title text="Certificates" />
-
+      <div className="inline-flex items-center justify-start w-full mb-2">
+        <span className="pr-3">
+          <Title text="CERTIFICATES" />
+        </span>
+        <hr className="w-full h-px bg-blue-900 dark:bg-blue-300 border-0" />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-2 py-1 pb-6 pt-2">
         {certificates.map((certificate, index) => (
           <div

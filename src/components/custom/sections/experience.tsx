@@ -5,7 +5,12 @@ import { experiences } from '@/components/data/experiences'
 function ExperienceSection() {
   return (
     <div>
-      <Title text="Experience" />
+      <div className="inline-flex items-center justify-start w-full">
+        <span className="pr-3">
+          <Title text="EXPERIENCE" />
+        </span>
+        <hr className="w-full h-px bg-blue-900 dark:bg-blue-300 border-0" />
+      </div>
 
       {experiences.map((exp, index) => (
         <div key={index} className="text-sm lg:text-lg py-1 pb-2">
