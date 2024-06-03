@@ -19,9 +19,9 @@ export const Certificates = () => {
           md:rounded-2xl
           first:rounded-t-2xl last:rounded-b-2xl`}
           >
-            <SubTitle text={certificate.name} />
+            <p className="font-bold text-blue-900 dark:text-blue-200">{certificate.name}</p>
 
-            <p className="text-blue-500">{certificate.issuingOrganization}</p>
+            <p className="text-blue-500 text-sm">{certificate.issuingOrganization}</p>
 
             <div className="flex mt-auto gap-4 justify-between font-mono text-slate-400 text-xs">
               {certificate.credentialID ? (
