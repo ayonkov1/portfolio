@@ -86,14 +86,14 @@ const CVComponent = () => {
       <Header />
       <div className="flex flex-col mt-4 gap-4 lg:gap-6">
         <Summary />
+        <div ref={skillsRef}>
+          <TechnicallSkills />
+        </div>
         <div ref={experienceRef}>
           <Experience />
         </div>
         <div ref={projectsRef}>
           <Projects />
-        </div>
-        <div ref={skillsRef}>
-          <TechnicallSkills />
         </div>
         <div ref={educationRef}>
           <Education />

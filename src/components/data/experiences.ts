@@ -14,7 +14,7 @@ interface Experience {
 export const experiences: Experience[] = [
   {
     title: 'Joint Master Thesis',
-    duration: 'February 2024 – Present',
+    duration: `February 2024 – Present (${new Date().getMonth() - 1}m)`,
     company: 'CWI (Centrum Wiskunde & Informatica) and University of Amsterdam (UvA)',
     location: 'Amsterdam, The Netherlands',
     roles: [
@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
     company: 'Merkle',
     location: 'Sofia, Bulgaria',
 
-    duration: 'April 2022 – Aug. 2023 (1y 6m)',
+    duration: 'April 2022 – August 2023 (1y 6m)',
     roles: [
       {
         title: 'Junior Software Engineer',
@@ -52,7 +52,7 @@ export const experiences: Experience[] = [
     title: 'Front-end Developer',
     company: 'GILO Technologies',
     location: 'Rijswijk, The Netherlands',
-    duration: 'July 2021 – Feb.2022 (8m)',
+    duration: 'July 2021 – February 2022 (8m)',
     roles: [
       {
         description: [

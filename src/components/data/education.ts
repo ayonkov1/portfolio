@@ -14,7 +14,7 @@ export const education: Education[] = [
     location: 'Amsterdam, The Netherlands',
     degree: 'Master of Science in Information Studies',
     GPA: 'Current GPA: 8.1',
-    duration: 'Aug. 2023 – Present',
+    duration: 'August 2023 – Present',
     activities: [
       'Next.js and Node.js were used to develop a full-stack web application for a research project focused on automating construction of formal normative language models',
     ],
@@ -23,7 +23,7 @@ export const education: Education[] = [
     name: 'Halmstad University of Applied Sciences',
     location: 'Halmstad, Sweden',
     program: 'Erasmus Exchange in Computer Networks (Minor)',
-    duration: 'Aug. 2022 – Jan. 2023',
+    duration: 'August 2022 – January 2023',
     activities: [
       'Learned the fundamentals of computer networks based on Cisco CCNA',
       'Studied system administration and gained practical insights into managing large-scale computer and network systems',
@@ -34,7 +34,7 @@ export const education: Education[] = [
     name: 'Fontys University of Applied Sciences',
     location: 'Eindhoven, The Netherlands',
     degree: 'Bachelor of Science in Information and Communication Technology',
-    duration: 'Aug. 2019 – Aug. 2023',
+    duration: 'August 2019 – August 2023',
     activities: [
       'Collaborated with both internal and external stakeholders to produce various projects',
       'Developed websites, mockups, user journeys, personas, and similar',
