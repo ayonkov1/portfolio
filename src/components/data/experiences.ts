@@ -1,6 +1,7 @@
 interface Role {
   title?: string
   description: string[]
+  duration?: string
 }
 
 interface Experience {
@@ -15,7 +16,7 @@ export const experiences: Experience[] = [
   {
     title: 'Joint Master Thesis',
     duration: `February 2024 – Present (${new Date().getMonth() - 1}m)`,
-    company: 'CWI (Centrum Wiskunde & Informatica) and University of Amsterdam (UvA)',
+    company: 'CWI (Centrum Wiskunde and Informatica) and University of Amsterdam (UvA)',
     location: 'Amsterdam, The Netherlands',
     roles: [
       {
@@ -30,7 +31,6 @@ export const experiences: Experience[] = [
     title: 'Junior Software Engineer',
     company: 'Merkle',
     location: 'Sofia, Bulgaria',
-
     duration: 'April 2022 – August 2023 (1y 6m)',
     roles: [
       {
@@ -41,10 +41,12 @@ export const experiences: Experience[] = [
           'Fixed bugs within client projects',
           'Developed a functionality for setting up and syncing (between dev and prod) on-demand sandboxes',
         ],
+        duration: 'Feb 2022 – August 2023 (8m)',
       },
       {
         title: 'Software Engineering Intern',
         description: ['Developed mock projects making use of the SalesForce Commerce Cloud platform'],
+        duration: 'April 2022 – Feb 2023 (10m)',
       },
     ],
   },

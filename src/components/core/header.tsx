@@ -28,7 +28,7 @@ export const Header = (): ReactNode => {
             <ModeToggle />
           </div>
 
-          <SocialButton variant="FileText" link="resume.pdf" />
+          <SocialButton variant="FileText" link="/ayonkov-cv-resume.pdf" />
           <SocialButton variant="Github" link="https://github.com/ayonkov1" />
           <SocialButton variant="Linkedin" link="https://www.linkedin.com/in/atanas-yonkov/" />
         </div>
