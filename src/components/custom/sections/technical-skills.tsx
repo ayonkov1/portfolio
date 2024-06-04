@@ -1,22 +1,6 @@
 import { SubTitle, Title, Text, TitleWithDivider } from '@/components/core/title'
 import React from 'react'
-
-const projects = [
-  {
-    title: 'Languages',
-    description: 'JavaScript, TypeScript, HTML/CSS, Python, SQL(MySQL), Bash*, C#*, R*',
-  },
-  {
-    title: 'Frameworks',
-    description:
-      'React, Redux (Thunk), Node.js, Next.js, Material-UI, Knex.js, SFCC, Apollo GraphQL, Tailwind CSS, FastAPI*, D3.js*, Chart.js*, numpy*, pandas*, matplotlib*',
-  },
-  {
-    title: 'Tools',
-    description: 'Git, VS Code, Postman, Unity*, Eclipse*, MatLab**',
-  },
-  { title: 'Concepts', description: 'OOP, Agile Development, Scrum' },
-]
+import { skills } from '../../data/skills'
 
 const TechnicallSkills = () => {
   return (
@@ -25,7 +9,7 @@ const TechnicallSkills = () => {
         <Title text="SKILLS" />
       </TitleWithDivider>
       <div className="py-1 flex flex-wrap flex-col lg:flex-row flex-grow lg:gap-2">
-        {projects.map((project, index) => (
+        {skills.map((skill, index) => (
           <div
             key={index}
             className={`
@@ -34,14 +18,11 @@ const TechnicallSkills = () => {
             lg:rounded-2xl last:rounded-b-2xl first:rounded-t-2xl 
             basis-auto flex-grow`}
           >
-            <SubTitle text={project.title} />
-            <Text text={project.description} />
+            <SubTitle text={skill.title} />
+            <Text text={skill.description} />
           </div>
         ))}
       </div>
-      <Text>
-        * - slightly advanced newbie <br /> ** - newbie
-      </Text>
     </div>
   )
 }
