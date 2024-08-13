@@ -15,7 +15,7 @@ const Summary = () => {
                   Software engineer with a interest in Front-end development and a strong foundation in JavaScript and TypeScript.
                   I have successfully leveraged frameworks such as React, Node.js, and Next.js to deliver innovative solutions. I
                   dare to say I don't know everything, but I am curious, quickly learn, and adapt. My preference is always for
-                  user experience over interface design, but I aim to combine both. These days I am mostly playing with Next.js
+                  user experience over interface design, but I aim to combine both. These days I am mostly playing with Next.js.
                 </Text>
                 <Text>
                   Simply put, I feel at my best when I am inspired by what I do, which maximizes my output. As{' '}

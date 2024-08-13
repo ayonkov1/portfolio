@@ -7,7 +7,7 @@ export default function Home() {
         className={`
       p-5  
       dark:bg-black bg-white 
-      dark:bg-dot-white/[0.2] bg-dot-black/[0.2] 
+      dark:bg-dot-white/[0.2] bg-dot-black/[0.2]
       absolute flex justify-center`}
       >
         <div

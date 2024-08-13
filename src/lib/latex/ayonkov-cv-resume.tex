@@ -20,6 +20,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{graphicx}
 \input{glyphtounicode}
 
 
@@ -108,14 +109,20 @@
 \begin{document}
 
 % ----------HEADING----------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.atanasyonkov.com/}{\Large Atanas Yonkov}} & Email : \href{mailto:atanasyonkov1@gmail.com}{atanasyonkov1@gmail.com}\\
-  \href{https://www.atanasyonkov.com/}{\small www.atanasyonkov.com} & Mobile : +359 (0) 879 385835 \\
-  $\rightarrow$ \href{https://www.linkedin.com/in/atanas-yonkov/}{\small linkedin/atanas-yonkov} $|$ \href{https://github.com/ayonkov1}{\small github/ayonkov1} 
-
+\begin{tabular*}{\textwidth}{@{}c@{\extracolsep{\fill}}l@{\extracolsep{\fill}}r@{}}
+  \raisebox{-.5\height}{\includegraphics[width=0.12\linewidth]{../../../public/profilepic.png}} &
+  \begin{tabular}[t]{@{}l@{}}
+    \textbf{\href{https://www.atanasyonkov.com/}{\Large Atanas Yonkov}} \\
+    \href{https://www.atanasyonkov.com/}{\small www.atanasyonkov.com} \\
+    $\rightarrow$ \href{https://www.linkedin.com/in/atanas-yonkov/}{\small linkedin/atanas-yonkov} $|$ \href{https://github.com/ayonkov1}{\small github/ayonkov1} 
+  \end{tabular} &
+  \begin{tabular}[t]{@{}r@{}}
+    Email: \href{mailto:atanasyonkov1@gmail.com}{atanasyonkov1@gmail.com} \\
+    Mobile: +359 (0) 879 385835
+  \end{tabular}
 \end{tabular*}
 
-\input{data.tex}
 
+\input{data.tex}
 %-------------------------------------------
 \end{document}
