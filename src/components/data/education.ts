@@ -12,9 +12,9 @@ export const education: Education[] = [
   {
     name: 'University of Amsterdam',
     location: 'Amsterdam, The Netherlands',
-    degree: 'Master of Science in Information Studies',
-    GPA: 'Current GPA: 8.1',
-    duration: 'August 2023 – Present',
+    degree: 'Master of Science in Information Systems',
+    GPA: 'Grade: Distinction',
+    duration: 'August 2023 – June 2024',
     activities: [
       'Data Systems Project: Designed and implemented a comprehensive data system in collaboration with TNO, focusing on database design, optimization, and real-world data engineering tasks.',
       'Explored how to leverage big data for business innovation, market opportunities, and entrepreneurial ventures through case studies and practical exercises',

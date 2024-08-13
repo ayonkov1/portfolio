@@ -14,13 +14,14 @@ interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: 'Joint Master Thesis',
-    duration: `February 2024 – Present (${new Date().getMonth() - 1}m)`,
+    title: 'Joint Master Thesis Researcher',
+    duration: `February 2024 – June 2024 (5m)`,
     company: 'CWI (Centrum Wiskunde and Informatica) and University of Amsterdam (UvA)',
     location: 'Amsterdam, The Netherlands',
     roles: [
       {
         description: [
+          'Thesis topic: Enhancing the Spectator Experience: Integrating Subtitle Display in eXtended Reality Theatres',
           "During my master's thesis project at the Netherlands Institute of Mathematics and Informatics, I am studying the user experience of displaying subtitles in extended reality (XR) environments",
           'Integrated eye tracking functionality of the Meta Quest Pro into a Unity theatre application in order gather data during the study',
         ],
@@ -28,13 +29,13 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'Software Engineer',
     company: 'Merkle',
     location: 'Sofia, Bulgaria',
     duration: 'April 2022 – August 2023 (1y 6m)',
     roles: [
       {
-        title: 'Junior Software Engineer',
+        title: 'Software Engineer',
         description: [
           'Developed an internal rewards system using Next.js, Apollo GraphQL and Knex.js',
           'Conducted my bachelor thesis, which was focused on exploring to what extent utilizing modern frameworks can improve the company’s development process',
