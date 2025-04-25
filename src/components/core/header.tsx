@@ -8,7 +8,7 @@ import Link from 'next/link'
 export const Header = (): ReactNode => {
   return (
     <div className="text-left flex lg:flex-row gap-5 lg:gap-10 justify-start">
-      <div className="lg:h-52 lg:w-52 relative w-32 h-32">
+      <div className="lg:h-52 lg:w-52 relative w-32 h-32 aspect-square">
         <Image
           priority
           src="/profilepic.webp"
