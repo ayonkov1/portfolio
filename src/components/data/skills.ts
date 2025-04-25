@@ -1,16 +1,22 @@
 export const skills = [
   {
     title: 'Languages',
-    description: 'JavaScript, TypeScript, HTML/CSS, Python, SQL(MySQL), Bash, C#, R',
+    description: 'JavaScript, TypeScript, HTML, CSS, Python, SQL, Bash, C#, R',
+  },
+  {
+    title: 'Libraries',
+    description: 'React.js, Redux (Thunk), Material-UI, Apollo GraphQL, D3.js, Chart.js, numpy, pandas, matplotlib',
   },
   {
     title: 'Frameworks',
-    description:
-      'React, Redux (Thunk), Node.js, Next.js, Material-UI, Knex.js, SFCC, Apollo GraphQL, Tailwind CSS, FastAPI, D3.js, Chart.js, numpy, pandas, matplotlib',
+    description: 'Vue.js, Node.js, Next.js, FastAPI, Tailwind CSS',
   },
   {
     title: 'Tools',
-    description: 'Git, VS Code, Postman, Unity, Eclipse, MatLab',
+    description: 'Git, VS Code, Postman, Unity, Eclipse, MATLAB',
   },
-  { title: 'Concepts', description: 'OOP, Agile Development, Scrum' },
+  {
+    title: 'Concepts',
+    description: 'OOP, Agile Development, Scrum',
+  },
 ]

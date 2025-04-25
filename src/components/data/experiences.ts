@@ -14,6 +14,17 @@ interface Experience {
 
 export const experiences: Experience[] = [
   {
+    title: 'Intelligent Automation Developer',
+    duration: `September 2024 – Now`,
+    company: 'KPMG ITS OOD',
+    location: 'Sofia, Bulgaria',
+    roles: [
+      {
+        description: ['Extending components and implementing features in the KPMG Sofy Low-code platform utilising Vue.js'],
+      },
+    ],
+  },
+  {
     title: 'Joint Master Thesis Researcher',
     duration: `February 2024 – June 2024 (5m)`,
     company: 'CWI (Centrum Wiskunde and Informatica) and University of Amsterdam (UvA)',
