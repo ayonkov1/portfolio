@@ -16,12 +16,8 @@ export const education: Education[] = [
     GPA: 'Grade: Distinction',
     duration: 'August 2023 – June 2024',
     activities: [
-      'Data Systems Project: Designed and implemented a comprehensive data system in collaboration with TNO, focusing on database design, optimization, and real-world data engineering tasks.',
-      'Explored how to leverage big data for business innovation, market opportunities, and entrepreneurial ventures through case studies and practical exercises',
-      'Studied the design and implementation of intelligent systems using human-computer interaction and machine learning to create adaptive user experiences.',
-      'Learned to build and simulate models for understanding complex systems and their dynamic behaviors across various applications.',
-      'Examined the societal impacts of digital technologies, including digital identity, privacy, and ethical considerations of emerging tech.',
-      'Analyzed and modeled complex societal systems using data analytics to design effective solutions for issues like urbanization, healthcare, and education.',
+      'Specialized in human-computer interaction, intelligent systems, and data-driven product design, with hands-on projects in collaboration with TNO.',
+      'Applied machine learning, systems modeling, and big data to real-world challenges in healthcare, urbanization, and education.',
     ],
   },
   {

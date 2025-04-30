@@ -12,13 +12,15 @@ const Summary = () => {
             <div className="relative shadow-xl bg-slate-50 dark:bg-slate-800 dark:bg-opacity-85 border py-3 px-4 h-full overflow-hidden rounded-3xl flex flex-col justify-end items-start">
               <div className="flex flex-col lg:flex-row gap-1 lg:gap-4">
                 <Text>
-                  Software engineer with a interest in Front-end development and a strong foundation in JavaScript and TypeScript.
-                  I have successfully leveraged frameworks such as React, Node.js, and Next.js to deliver innovative solutions. I
-                  dare to say I don't know everything, but I am curious, quickly learn, and adapt. My preference is always for
-                  user experience over interface design, but I aim to combine both. These days I am mostly playing with Next.js.
+                  Front-end-focused software engineer with a background in graphic design and a strong foundation in JavaScript
+                  and TypeScript. My design roots gave me a deep appreciation for smooth, intuitive user experiences — that’s
+                  still what drives me today. I’ve worked with tools like React, Node.js, and Next.js to build responsive,
+                  user-first interfaces.
                 </Text>
                 <Text>
-                  Simply put, I feel at my best when I am inspired by what I do, which maximizes my output. As{' '}
+                  While I don’t claim to know everything, I’m naturally curious, quick to learn, and always adapting. If I can get
+                  my hands dirty by doing something, I will definetely do so. I do my best work when I’m inspired by what I’m
+                  building — that’s when ideas flow and output follows. As{' '}
                   <Link
                     href="https://anthonyalicea.com/"
                     as="https://anthonyalicea.com/"
@@ -28,10 +30,7 @@ const Summary = () => {
                   >
                     Anthony Alicea
                   </Link>{' '}
-                  puts it, "Don't imitate, understand." It's fair to say that I enjoy his courses. Currently, I started exploring
-                  the world of eXtended Reality (XR) environments in a scientific context. With a Master's degree in Information
-                  Studies and a project at the Netherlands Institute of Mathematics and Informatics regarding VR/AR theaters, I
-                  found a lot of value in scientific works.
+                  says, “Don’t imitate, understand” — a mindset I try to follow.
                 </Text>
               </div>
             </div>
