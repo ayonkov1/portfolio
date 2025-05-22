@@ -84,9 +84,9 @@ const convertCertificatesToLatex = (certificates) => {
 const experienceLatex = convertExperienceToLatex(experiences)
 const educationLatex = convertEducationToLatex(education)
 const skillsLatex = convertSkillsToLatex(skills)
-const certificatesLatex = convertCertificatesToLatex(certificates)
+// const certificatesLatex = convertCertificatesToLatex(certificates)
 
-const latexContent = experienceLatex + '\n' + skillsLatex + '\n' + educationLatex + '\n' + certificatesLatex
+const latexContent = experienceLatex + '\n' + skillsLatex + '\n' + educationLatex + '\n'
 fs.writeFileSync('latex/data.tex', latexContent)
 
 console.log('LaTeX file generated: latex/data.tex')

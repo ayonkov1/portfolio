@@ -27,8 +27,8 @@ export const education: Education[] = [
     duration: 'August 2022 – January 2023',
     activities: [
       'Learned the fundamentals of computer networks based on Cisco CCNA',
-      'Studied system administration and gained practical insights into managing large-scale computer and network systems',
-      'Applied networking concepts using Linux and Python',
+      // 'Studied system administration and gained practical insights into managing large-scale computer and network systems',
+      'Managed small-scale network infrastructures using Linux and Python',
     ],
   },
   {

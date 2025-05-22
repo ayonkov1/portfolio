@@ -1,11 +1,11 @@
 export const skills = [
   {
     title: 'Languages',
-    description: 'JavaScript, TypeScript, HTML, CSS, Python, SQL, Bash, C#, R',
+    description: 'JavaScript, TypeScript, HTML, CSS, Python, SQL',
   },
   {
     title: 'Libraries',
-    description: 'React.js, Redux (Thunk), Material-UI, Apollo GraphQL, D3.js, Chart.js, numpy, pandas, matplotlib',
+    description: 'React.js, Redux, Material-UI, Apollo GraphQL, D3.js, Highcharts.js, numpy, pandas, matplotlib',
   },
   {
     title: 'Frameworks',
@@ -13,7 +13,7 @@ export const skills = [
   },
   {
     title: 'Tools',
-    description: 'Git, VS Code, Postman, Unity, Eclipse, MATLAB',
+    description: 'Git, VS Code, Postman, Unity',
   },
   {
     title: 'Concepts',

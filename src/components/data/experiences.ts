@@ -20,7 +20,11 @@ export const experiences: Experience[] = [
     location: 'Sofia, Bulgaria',
     roles: [
       {
-        description: ['Extending components and implementing features in the KPMG Sofy Low-code platform utilising Vue.js'],
+        description: [
+          'Enhance and extend low-code platform components with custom Vue.js functionality to meet complex client-specific requirements.',
+          'Develop and automate the generation of data-driven Excel, PowerPoint, and PDF reports tailored to business needs, ensuring consistency, accuracy, and scalability.',
+          'Collaborate closely with stakeholders to translate technical and non-technical requirements into efficient and maintainable front-end solutions.',
+        ],
       },
     ],
   },
@@ -32,9 +36,7 @@ export const experiences: Experience[] = [
     roles: [
       {
         description: [
-          'Thesis topic: Enhancing the Spectator Experience: Integrating Subtitle Display in eXtended Reality Theatres',
-          "During my master's thesis project at the Netherlands Institute of Mathematics and Informatics, I am studying the user experience of displaying subtitles in extended reality (XR) environments",
-          'Integrated eye tracking functionality of the Meta Quest Pro into a Unity theatre application in order gather data during the study',
+          'Developed a Unity-based XR theatre application for Meta Quest Pro, integrating eye-tracking to gather real-time user attention data.',
         ],
       },
     ],
@@ -43,21 +45,21 @@ export const experiences: Experience[] = [
     title: 'Software Engineer',
     company: 'Merkle',
     location: 'Sofia, Bulgaria',
-    duration: 'April 2022 – August 2023 (1y 6m)',
+    duration: 'April 2022 – August 2023 (1y 8m)',
     roles: [
       {
         title: 'Software Engineer',
         description: [
-          'Developed an internal rewards system using Next.js, Apollo GraphQL and Knex.js',
-          'Conducted my bachelor thesis, which was focused on exploring to what extent utilizing modern frameworks can improve the company’s development process',
-          'Fixed bugs within client projects',
-          'Developed a functionality for setting up and syncing (between dev and prod) on-demand sandboxes',
+          'Developed a environment management feature used company-wide enabling on-demand sandboxes (ODS) with sync between dev and prod, reducing setup time and errors.',
+          'Built an internal rewards system using Next.js, Apollo GraphQL, and Knex.js, improving employee engagement through streamlined recognition.',
         ],
         duration: 'Feb 2022 – August 2023 (8m)',
       },
       {
         title: 'Software Engineering Intern',
-        description: ['Developed mock projects making use of the SalesForce Commerce Cloud platform'],
+        description: [
+          'Created mock e-commerce applications using Salesforce Commerce Cloud to support internal onboarding and tool familiarization.',
+        ],
         duration: 'April 2022 – Feb 2023 (10m)',
       },
     ],
@@ -70,9 +72,7 @@ export const experiences: Experience[] = [
     roles: [
       {
         description: [
-          'Developed and implemented the foundation for the GILO Google Docs add-on using TypeScript',
-          'Developed and maintained the GILO Microsoft Word add-on using TypeScript and Node.js',
-          'Created short animations with marketing purposes using Adobe AfterEffects',
+          'Developed core functionality for Google Docs and Microsoft Word add-ons using TypeScript and Node.js, enabling the GILO app to exist as ADD-ON for these document editors.',
         ],
       },
     ],
