@@ -6,7 +6,7 @@ export const skills = [
   {
     title: 'Technologies',
     description:
-      'React.js, Redux, Apollo GraphQL, Express.js, FastAPI, Next.js, Node.js, Vue 2 / Vue 3 (Composition and Options APIs), Vuex, Pinia, Tailwind CSS, MongoDB, MySQL, Prisma ORM, Knex.js, Salesforce Commerce Cloud',
+      'React.js, Next.js, Redux, Vue 2 / Vue 3 (Composition and Options APIs), Vuex, Pinia, Express.js, Node.js, FastAPI, Apollo GraphQL, Tailwind CSS, MongoDB, MySQL, Prisma ORM, Knex.js, Salesforce Commerce Cloud',
   },
   {
     title: 'Tools',
