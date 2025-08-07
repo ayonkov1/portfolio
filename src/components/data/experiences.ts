@@ -14,7 +14,7 @@ interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: 'Junior Software Developer',
+    title: 'Junior Software Engineer',
     duration: `September 2024 – Now`,
     company: 'KPMG ITS OOD',
     location: 'Sofia, Bulgaria',
