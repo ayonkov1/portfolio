@@ -14,14 +14,15 @@ interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: 'Intelligent Automation Developer',
+    title: 'Junior Software Developer',
     duration: `September 2024 – Now`,
     company: 'KPMG ITS OOD',
     location: 'Sofia, Bulgaria',
     roles: [
       {
         description: [
-          'Enhance and extend low-code platform components with custom Vue.js functionality to meet complex client-specific requirements.',
+          'Enhance and extend internal platform components with custom Vue.js functionality to meet complex client-specific requirements.',
+          'Guide and mentor other junior developers in best practices and onboarding on the projects.',
           'Develop and automate the generation of data-driven Excel, PowerPoint, and PDF reports tailored to business needs, ensuring consistency, accuracy, and scalability.',
           'Collaborate closely with stakeholders to translate technical and non-technical requirements into efficient and maintainable front-end solutions.',
         ],
@@ -42,13 +43,13 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    title: 'Software Engineer',
+    title: 'Junior Software Engineer',
     company: 'Merkle',
     location: 'Sofia, Bulgaria',
-    duration: 'April 2022 – August 2023 (1y 8m)',
+    duration: 'April 2022 – August 2023 (1y 6m)',
     roles: [
       {
-        title: 'Software Engineer',
+        title: 'Junior Software Engineer',
         description: [
           'Developed a environment management feature used company-wide enabling on-demand sandboxes (ODS) with sync between dev and prod, reducing setup time and errors.',
           'Built an internal rewards system using Next.js, Apollo GraphQL, and Knex.js, improving employee engagement through streamlined recognition.',
@@ -65,7 +66,7 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    title: 'Front-end Developer',
+    title: 'Junior Software Engineer',
     company: 'GILO Technologies',
     location: 'Rijswijk, The Netherlands',
     duration: 'July 2021 – February 2022 (8m)',

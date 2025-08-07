@@ -9,6 +9,14 @@ export interface Certificate {
 
 export const certificates: Certificate[] = [
   {
+    name: 'AI Tools for Developers',
+    issuingOrganization: 'Softuni AI',
+    issueDate: 'June 2025',
+    expirationDate: 'This certification does not expire',
+    credentialID: '8371/ea40f643',
+    credentialURL: 'https://ai.softuni.bg/certificates/details/8371/ea40f643',
+  },
+  {
     name: 'Adobe Premiere Pro',
     issuingOrganization: 'Softuni Creative',
     issueDate: 'May 2021',

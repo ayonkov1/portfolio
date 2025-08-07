@@ -20,7 +20,7 @@ export const Header = (): ReactNode => {
       </div>
       <div className="flex flex-col gap-1 md:gap-2 justify-between">
         <h1 className="text-xl lg:text-4xl font-extrabold relative z-20 text-blue-900 dark:text-blue-400">Atanas Yonkov</h1>
-        <p className="text-base lg:text-xl">software engineer from Sofia, Bulgaria</p>
+        <p className="text-base lg:text-xl">Software Engineer from Sofia, Bulgaria</p>
         <div className="hidden lg:flex text-sm lg:text-base lg:flex-col lg:gap-1">
           <Link
             className="hover:underline underline-offset-auto decoration-slate-700 transition-transform"
