@@ -14,66 +14,58 @@ interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: 'Junior Software Engineer',
-    duration: `September 2024 – Now`,
-    company: 'KPMG ITS OOD',
+    title: 'Software Engineer',
+    duration: 'September 2024 – Present',
+    company: 'KPMG ITS',
     location: 'Sofia, Bulgaria',
     roles: [
       {
         description: [
-          'Enhance and extend internal platform components with custom Vue.js functionality to meet complex client-specific requirements.',
-          'Guide and mentor other junior developers in best practices and onboarding on the projects.',
-          'Develop and automate the generation of data-driven Excel, PowerPoint, and PDF reports tailored to business needs, ensuring consistency, accuracy, and scalability.',
-          'Collaborate closely with stakeholders to translate technical and non-technical requirements into efficient and maintainable front-end solutions.',
+          'Extend AI-powered agentic platform using LangChain and LangGraph that enables real-time client interaction with large-scale fiscal data (implemented Azure integration, multiprocessing for concurrent user sessions, and auto-scaling worker instances).',
+          'Build and extend internal Vue.js platform components serving multiple concurrent client engagements, improving feature delivery through reusable, modular architecture.',
+          'Mentor junior developers on codebase onboarding, PR review practices, and frontend architecture patterns.',
+          'Automate generation of data-driven reports (Excel, PowerPoint, PDF), eliminating manual workflows and ensuring cross-business-unit consistency.',
         ],
       },
     ],
   },
   {
-    title: 'Joint Master Thesis Researcher',
-    duration: `February 2024 – June 2024 (5m)`,
-    company: 'CWI (Centrum Wiskunde and Informatica) and University of Amsterdam (UvA)',
+    title: 'Research Engineer',
+    duration: 'February 2024 – June 2024 (5m)',
+    company: 'CWI & University of Amsterdam',
     location: 'Amsterdam, The Netherlands',
     roles: [
       {
         description: [
-          'Developed a Unity-based XR theatre application for Meta Quest Pro, integrating eye-tracking to gather real-time user attention data.',
+          'Designed user study (n=16) with 7-test validation pipeline; built data collection system and delivered actionable product recommendations based on quantitative analysis.',
         ],
       },
     ],
   },
   {
-    title: 'Junior Software Engineer',
-    company: 'Merkle',
+    title: 'Software Engineer',
+    company: 'Merkle (Dentsu)',
     location: 'Sofia, Bulgaria',
-    duration: 'April 2022 – August 2023 (1y 6m)',
+    duration: 'April 2022 – September 2023 (1y 6m)',
     roles: [
       {
-        title: 'Junior Software Engineer',
         description: [
-          'Developed a environment management feature used company-wide enabling on-demand sandboxes (ODS) with sync between dev and prod, reducing setup time and errors.',
-          'Built an internal rewards system using Next.js, Apollo GraphQL, and Knex.js, improving employee engagement through streamlined recognition.',
+          'Built environment management system adopted company-wide, enabling on-demand sandbox provisioning with automated dev/prod sync — reduced setup time by approximately 80%.',
+          'Developed internal employee rewards platform (Next.js, Apollo GraphQL, Knex.js), streamlining peer recognition and improving engagement.',
         ],
-        duration: 'Feb 2022 – August 2023 (8m)',
-      },
-      {
-        title: 'Software Engineering Intern',
-        description: [
-          'Created mock e-commerce applications using Salesforce Commerce Cloud to support internal onboarding and tool familiarization.',
-        ],
-        duration: 'April 2022 – Feb 2023 (10m)',
       },
     ],
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'Software Engineer Intern',
     company: 'GILO Technologies',
     location: 'Rijswijk, The Netherlands',
     duration: 'July 2021 – February 2022 (8m)',
     roles: [
       {
         description: [
-          'Developed core functionality for Google Docs and Microsoft Word add-ons using TypeScript and Node.js, enabling the GILO app to exist as ADD-ON for these document editors.',
+          'Built core integration layer for Google Docs and Microsoft Word add-ons using TypeScript and Node.js.',
+          'Delivered production features for document automation used by end-customers for contract management.',
         ],
       },
     ],

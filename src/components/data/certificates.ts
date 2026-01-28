@@ -5,71 +5,26 @@ export interface Certificate {
   expirationDate: string
   credentialID?: string | null
   credentialURL: string
+  highlights?: string[]
 }
 
 export const certificates: Certificate[] = [
   {
+    name: 'AI Integrations for Developers',
+    issuingOrganization: 'SoftUni AI',
+    issueDate: 'August 2025',
+    expirationDate: 'This certification does not expire',
+    credentialID: '9505/a67b3aca',
+    credentialURL: 'https://ai.softuni.bg/Certificates/Details/9505/a67b3aca',
+    highlights: ['LangChain & LangGraph', 'Vector Databases & Embeddings', 'OpenAI & Anthropic API Integration'],
+  },
+  {
     name: 'AI Tools for Developers',
-    issuingOrganization: 'Softuni AI',
+    issuingOrganization: 'SoftUni AI',
     issueDate: 'June 2025',
     expirationDate: 'This certification does not expire',
     credentialID: '8371/ea40f643',
     credentialURL: 'https://ai.softuni.bg/certificates/details/8371/ea40f643',
-  },
-  {
-    name: 'Adobe Premiere Pro',
-    issuingOrganization: 'Softuni Creative',
-    issueDate: 'May 2021',
-    expirationDate: 'This certification does not expire',
-    credentialID: '15971/706eecef',
-    credentialURL: 'https://creative.softuni.bg/Certificates/Details/15971/706eecef',
-  },
-  {
-    name: 'Agile Software Development',
-    issuingOrganization: 'Coursera',
-    issueDate: 'Sep 2020',
-    expirationDate: 'This certification does not expire',
-    credentialID: 'XHLFLW6BQXHR',
-    credentialURL: 'https://www.coursera.org/account/accomplishments/certificate/XHLFLW6BQXHR',
-  },
-  {
-    name: 'Brand New Brand',
-    issuingOrganization: 'Coursera',
-    issueDate: 'June 2020',
-    expirationDate: 'This certification does not expire',
-    credentialID: 'ANNS8YX3JNFT',
-    credentialURL: 'https://www.coursera.org/account/accomplishments/certificate/ANNS8YX3JNFT',
-  },
-  {
-    name: 'Introduction to Typography',
-    issuingOrganization: 'Coursera',
-    issueDate: 'May 2020',
-    expirationDate: 'This certification does not expire',
-    credentialID: 'ZD3QHMGR2XE9',
-    credentialURL: 'https://www.coursera.org/account/accomplishments/certificate/ZD3QHMGR2XE9',
-  },
-  {
-    name: 'Fundamentals of Graphic Design',
-    issuingOrganization: 'Coursera',
-    issueDate: 'May 2020',
-    expirationDate: 'This certification does not expire',
-    credentialID: 'Y7ZN6VP5743C',
-    credentialURL: 'https://www.coursera.org/account/accomplishments/certificate/Y7ZN6VP5743C',
-  },
-  {
-    name: 'Intermediate SQL Queries',
-    issuingOrganization: 'DataCamp',
-    issueDate: 'Nov 2019',
-    expirationDate: 'This certification does not expire',
-    credentialID: 'Y7ZN6VP5743C',
-    credentialURL: 'https://www.datacamp.com/statement-of-accomplishment/course/db819f7016ce7088e12ae695c504d18a6a6a4692',
-  },
-  {
-    name: 'Introduction to Tidyverse',
-    issuingOrganization: 'DataCamp',
-    issueDate: 'Sep 2019',
-    expirationDate: 'This certification does not expire',
-    credentialID: 'Y7ZN6VP5743C',
-    credentialURL: 'https://www.datacamp.com/statement-of-accomplishment/course/ed885ce1dd657113464082e4864df8f7312b1602',
+    highlights: ['GitHub Copilot & Cursor AI', 'Claude in Development', 'Multi-Tool AI Integration'],
   },
 ]

@@ -9,36 +9,34 @@ export const Certificates = () => {
         <Title text="CERTIFICATES" />
       </TitleWithDivider>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-2 py-1 pb-6 pt-2">
+      <div className="space-y-4 mt-4">
         {certificates.map((certificate, index) => (
-          <div
-            key={index}
-            className={`flex flex-col 
-          border lg:rounded-2xl p-4 shadow-lg 
-          bg-slate-50 dark:bg-slate-800
-          md:rounded-2xl
-          first:rounded-t-2xl last:rounded-b-2xl`}
-          >
-            <p className="font-bold text-blue-900 dark:text-blue-200">{certificate.name}</p>
-
-            <p className="text-blue-500 text-sm">{certificate.issuingOrganization}</p>
-
-            <div className="flex mt-auto gap-4 justify-between font-mono text-slate-400 text-xs">
-              {certificate.credentialID ? (
-                <Link
-                  href={certificate.credentialURL}
-                  as={certificate.credentialURL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline font-mono"
-                >
-                  {certificate.credentialID}
-                </Link>
-              ) : (
-                <p>{`Reference: N/A`}</p>
-              )}
-              <p className="text-right">{certificate.issueDate} </p>
+          <div key={index} className="flex flex-col gap-1">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+              <h3 className="font-bold text-base lg:text-lg text-blue-900 dark:text-blue-200">{certificate.name}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 sm:text-right">{certificate.issueDate}</p>
             </div>
+
+            <p className="text-sm lg:text-base text-blue-600 dark:text-blue-400">{certificate.issuingOrganization}</p>
+
+            {certificate.highlights && certificate.highlights.length > 0 && (
+              <ul className="text-sm lg:text-base text-gray-700 dark:text-gray-300 list-disc list-inside mt-1">
+                {certificate.highlights.map((highlight, hIndex) => (
+                  <li key={hIndex}>{highlight}</li>
+                ))}
+              </ul>
+            )}
+
+            {certificate.credentialID && (
+              <Link
+                href={certificate.credentialURL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 underline mt-1"
+              >
+                Credential ID: {certificate.credentialID}
+              </Link>
+            )}
           </div>
         ))}
       </div>
