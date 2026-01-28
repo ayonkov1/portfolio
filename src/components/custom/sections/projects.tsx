@@ -18,7 +18,6 @@ export function Projects() {
             header={item.header}
             className={item.className}
             tags={item.tags}
-            articleLink={item.articleLink}
             codeLink={item.codeLink}
             prodLink={item.prodLink}
           />

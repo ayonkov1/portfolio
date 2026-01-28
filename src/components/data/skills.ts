@@ -1,19 +1,33 @@
+import { title } from 'process'
+
 export const skills = [
   {
     title: 'Languages',
     description: 'TypeScript, JavaScript, Python, SQL',
   },
   {
-    title: 'Technologies',
-    description:
-      'React.js, Next.js, Redux, Vue 2 / Vue 3 (Composition and Options APIs), Vuex, Pinia, Express.js, Node.js, FastAPI, Apollo GraphQL, Tailwind CSS, MongoDB, MySQL, Prisma ORM, Knex.js, Salesforce Commerce Cloud',
+    title: 'Frontend',
+    description: 'React, Next.js, Vue 2/3, TanStack Query, Redux, Vuex, Pinia, Tailwind CSS',
   },
   {
-    title: 'Tools',
-    description: 'Git, Docker, Unity, Webpack, Babel',
+    title: 'Backend',
+    description: 'Node.js, Express, FastAPI, Apollo GraphQL, REST APIs',
   },
   {
-    title: 'Concepts',
-    description: 'OOP, RESTful APIs, Microservices, CI/CD, Micro Frontends',
+    title: 'AI/LLM',
+    description: 'LangChain, LangGraph, AI Agents, Prompt Engineering',
   },
+  {
+    title: 'Databases',
+    description: 'PostgreSQL, MongoDB, TSQL, SQLAlchemy, Prisma ORM, Knex.js',
+  },
+  {
+    title: 'DevOps & Tools',
+    description: 'Docker, Docker Compose, Nginx, Git, CI/CD, Webpack',
+  },
+  {
+    title: 'Validation & Testing',
+    description: 'Zod, Pydantic, React Hook Form, pytest',
+  },
+  { title: 'Concepts', description: 'OOP, Functional Programming, RESTful Design, GraphQL, Microservices' },
 ]

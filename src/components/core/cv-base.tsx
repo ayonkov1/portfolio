@@ -72,12 +72,10 @@ const CVComponent = () => {
     <div
       className={`
       py-1
-      mx-0 
-      sm:mx-12
-      md:mx-24
-      lg:mx-48
-      xl:mx-72
-      2xl:mx-96
+      px-4
+      sm:px-12
+      md:px-24
+      max-w-screen-lg
       `}
     >
       {/* <div className="relative w-full">

@@ -1,4 +1,4 @@
-import { SubTitle, Title, Text, TitleWithDivider } from '@/components/core/title'
+import { SubTitle, Title, TitleWithDivider } from '@/components/core/title'
 import React from 'react'
 import { skills } from '../../data/skills'
 
@@ -8,18 +8,13 @@ const TechnicallSkills = () => {
       <TitleWithDivider>
         <Title text="SKILLS" />
       </TitleWithDivider>
-      <div className="py-1 flex flex-wrap flex-col lg:flex-row flex-grow lg:gap-2">
+      <div className="space-y-3 mt-4">
         {skills.map((skill, index) => (
-          <div
-            key={index}
-            className={`
-            border px-4 py-2 shadow-md 
-          bg-slate-50 dark:bg-slate-800
-            lg:rounded-2xl last:rounded-b-2xl first:rounded-t-2xl 
-            basis-auto flex-grow`}
-          >
-            <SubTitle text={skill.title} />
-            <Text text={skill.description} />
+          <div key={index} className="flex flex-col sm:flex-row sm:gap-4 sm:items-end">
+            <div className="sm:min-w-[200px]">
+              <SubTitle text={skill.title} />
+            </div>
+            <p className="text-sm lg:text-base text-gray-700 dark:text-gray-300">{skill.description}</p>
           </div>
         ))}
       </div>

@@ -1,8 +1,26 @@
-const fs = require('fs')
-import { education } from '../components/data/education'
-import { experiences } from '../components/data/experiences'
-import { skills } from '../components/data/skills'
-import { certificates } from '../components/data/certificates'
+import fs from 'fs'
+import { education } from '../components/data/education.ts'
+import { experiences } from '../components/data/experiences.ts'
+import { skills } from '../components/data/skills.ts'
+import { certificates } from '../components/data/certificates.ts'
+
+// Function to escape LaTeX special characters
+const escapeLatex = (text) => {
+  if (!text) return ''
+  return text
+    .replace(/\\/g, '\\textbackslash{}')
+    .replace(/\{/g, '\\{')
+    .replace(/\}/g, '\\}')
+    .replace(/\$/g, '\\$')
+    .replace(/&/g, '\\&')
+    .replace(/%/g, '\\%')
+    .replace(/#/g, '\\#')
+    .replace(/\^/g, '\\textasciicircum{}')
+    .replace(/_/g, '\\_')
+    .replace(/~/g, '\\textasciitilde{}')
+    .replace(/"/g, "''")
+    .replace(/'/g, "'")
+}
 
 const convertEducationToLatex = (education) => {
   let latex = '\\section{Education}\n'
@@ -10,15 +28,16 @@ const convertEducationToLatex = (education) => {
 
   education.forEach((school) => {
     latex += '  \\resumeSubheading\n'
-    latex += `    {${school.name}}{${school.location}}\n`
+    latex += `    {${escapeLatex(school.name)}}{${escapeLatex(school.location)}}\n`
     if (school.degree) {
-      latex += `    {${school.degree}, ${school.GPA ? school.GPA : ''}}{${school.duration}}\n`
+      const gpa = school.GPA ? `, ${escapeLatex(school.GPA)}` : ''
+      latex += `    {${escapeLatex(school.degree)}${gpa}}{${escapeLatex(school.duration)}}\n`
     } else if (school.program) {
-      latex += `    {${school.program}}{${school.duration}}\n`
+      latex += `    {${escapeLatex(school.program)}}{${escapeLatex(school.duration)}}\n`
     }
     latex += '    \\resumeItemListStart\n'
     school.activities.forEach((activity) => {
-      latex += `      \\resumeItem{${activity}}\n`
+      latex += `      \\resumeItem{${escapeLatex(activity)}}\n`
     })
     latex += '    \\resumeItemListEnd\n'
   })
@@ -33,16 +52,16 @@ const convertExperienceToLatex = (experiences) => {
 
   experiences.forEach((experience) => {
     latex += '  \\resumeSubheading\n'
-    latex += `    {${experience.title}}{${experience.duration}}\n`
-    latex += `    {${experience.company}}{${experience.location}}\n`
+    latex += `    {${escapeLatex(experience.title)}}{${escapeLatex(experience.duration)}}\n`
+    latex += `    {${escapeLatex(experience.company)}}{${escapeLatex(experience.location)}}\n`
     experience.roles.forEach((role) => {
       if (role.title) {
         latex += '    \\resumeSubSubheading\n'
-        latex += `      {${role.title}}{${role.duration}}\n`
+        latex += `      {${escapeLatex(role.title)}}{${escapeLatex(role.duration)}}\n`
       }
       latex += '      \\resumeItemListStart\n'
       role.description.forEach((item) => {
-        latex += `        \\resumeItem{${item}}\n`
+        latex += `        \\resumeItem{${escapeLatex(item)}}\n`
       })
       latex += '      \\resumeItemListEnd\n'
     })
@@ -58,7 +77,7 @@ const convertSkillsToLatex = (skills) => {
   latex += '  \\small{\\item{\n'
 
   skills.forEach((skill) => {
-    latex += `    \\textbf{${skill.title}}{: ${skill.description}} \\\\\n`
+    latex += `    \\textbf{${escapeLatex(skill.title)}}{: ${escapeLatex(skill.description)}} \\\\\n`
   })
   latex += '  }}\n'
   latex += ' \\end{itemize}\n'
@@ -72,11 +91,13 @@ const convertCertificatesToLatex = (certificates) => {
 
   latex += `    \\textbf{Languages}{: English C1 (CAE), Russian B2 (TORFL-2), French B2 (DELF)} \\\\\n`
   latex += `    \\textbf{Technical}{: `
-  certificates.forEach((cert) => {
-    latex += `${cert.name} (${cert.issuingOrganization}, ${cert.issueDate}), `
+  certificates.forEach((cert, index) => {
+    const separator = index < certificates.length - 1 ? ', ' : ''
+    latex += `${escapeLatex(cert.name)} (${escapeLatex(cert.issuingOrganization)}, ${escapeLatex(cert.issueDate)})${separator}`
   })
 
-  latex += '\n}}}\n'
+  latex += '} \\\\\n'
+  latex += '  }}\n'
   latex += ' \\end{itemize}\n'
   return latex
 }
