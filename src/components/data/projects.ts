@@ -2,7 +2,7 @@ export const items = [
   {
     title: '3D Printing ERP System',
     description:
-      'Full-stack inventory management system with complete architectural ownership. Features layered backend (API → Service → Repository), real-time validation with Pydantic + Zod, TanStack Query for server state, and containerized deployment with Docker + Nginx. Planning AI-powered predictive analytics for automated reordering.',
+      'Built 3D printing ERP solving manufacturing inventory challenges. Tackled complex filament tracking and print job workflows. Features AI-powered insights for predictive inventory and usage analytics. Architected clean microservices with role-based authorization, activity logging, and dashboard analytics. Delivered production-ready solution with containerized deployment and CI/CD pipelines, demonstrating full-stack ownership and deep manufacturing domain expertise.',
     tags: ['Full-stack', 'React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Docker'],
     header: '/3D-printing-banner.jpeg',
     className: 'md:col-span-6',
