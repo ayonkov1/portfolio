@@ -3,6 +3,7 @@ import { education } from '../components/data/education.ts'
 import { experiences } from '../components/data/experiences.ts'
 import { skills } from '../components/data/skills.ts'
 import { certificates } from '../components/data/certificates.ts'
+import { items as projects } from '../components/data/projects.ts'
 
 // Function to escape LaTeX special characters
 const escapeLatex = (text) => {
@@ -102,12 +103,31 @@ const convertCertificatesToLatex = (certificates) => {
   return latex
 }
 
-const experienceLatex = convertExperienceToLatex(experiences)
-const educationLatex = convertEducationToLatex(education)
-const skillsLatex = convertSkillsToLatex(skills)
-// const certificatesLatex = convertCertificatesToLatex(certificates)
+const convertTopProjectToLatex = (topProject) => {
+  if (!topProject) return ''
 
-const latexContent = experienceLatex + '\n' + skillsLatex + '\n' + educationLatex + '\n'
+  let latex = '\\section{Projects}\n'
+  latex += '\\resumeSubHeadingListStart\n'
+
+  const techStack = topProject.tags.join(', ')
+  const link = topProject.prodLink || topProject.codeLink || ''
+  const linkText = link.replace('https://www.', '').replace('https://', '')
+
+  latex += '  \\resumeProjectHeading\n'
+  latex += `    {\\textbf{${escapeLatex(topProject.title)}} $|$ \\emph{${escapeLatex(techStack)}}}{\\href{${link}}{${linkText}}}\n`
+  latex += '    \\resumeItemListStart\n'
+  latex += `      \\resumeItem{${escapeLatex(topProject.description)}}\n`
+  latex += '    \\resumeItemListEnd\n'
+  latex += '\\resumeSubHeadingListEnd\n'
+  return latex
+}
+
+const experienceLatex = convertExperienceToLatex(experiences)
+const topProjectLatex = convertTopProjectToLatex(projects[0])
+const skillsLatex = convertSkillsToLatex(skills)
+const educationLatex = convertEducationToLatex(education)
+
+const latexContent = experienceLatex + '\n' + topProjectLatex + '\n' + skillsLatex + '\n' + educationLatex + '\n'
 fs.writeFileSync('latex/data.tex', latexContent)
 
-console.log('LaTeX file generated: latex/data.tex')
+console.log('LaTeX file generated with top project: latex/data.tex')
